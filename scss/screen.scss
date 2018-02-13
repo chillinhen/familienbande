@@ -1,9 +1,11 @@
 @import "../../toolbox/sass/myMixins/extends.scss";
-/*@import "../../../toolbox/sass/myMixins/mixins.scss";
-@import "../../../toolbox/sass/myMixins/breakpoints.scss";*/
-@import "bourbon";
+@import "../../toolbox/sass/myMixins/mixins.scss";
+@import "../../toolbox/sass/myMixins/breakpoints.scss";
+@import "../../toolbox/bower_components/bourbon/bourbon.scss";
 
-@import 'utils/_variables';
+/*@import "bourbon";*/
+/*
+@import 'utils/_variables';*/
 /*
 @import 'utils/_mixins';
 @import 'utils/_icons';

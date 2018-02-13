@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,6BAA6B;ACY7B,+BAA+B;AAsE/B,iBAAiB;AAgGjB,qEAAqE;AAqCrE,uBAAuB;AAiBvB,qBAAqB;AA6BrB,kBAAkB;AASlB,mBAAmB;AC9QnB,8BAA8B;AAc9B,oBAAoB;ACTpB,sBAAsB;AACtB;6BAC6B;AAC7B;;;;;;;;;;;;;;;;;;;;;;;;;iCAyBiC;AAGjC;;2BAE2B;ACnC3B,IAAI;EACA,MAAM,EAAC,KAAK;;AAEhB,MAAM;EACF,OAAO,EAAC,KAAK;;AAGjB,mBAAmB",
+"sources": ["../../toolbox/sass/myMixins/extends.scss","../../toolbox/sass/myMixins/mixins.scss","../../toolbox/sass/myMixins/breakpoints.scss","../scss/screen.scss","../scss/_shame.scss"],
+"names": [],
+"file": "screen.css"
+}
