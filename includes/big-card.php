@@ -1,9 +1,9 @@
 <div class="card card-default box-shadow">
     <div class="card-img-top card-zoom">
-        <img class="card-img-top" src="https://dummyimage.com/600x400/000/00ffd5.png." alt="Card image cap">
+        <img class="card-img-top" src="https://dummyimage.com/600x300/eee/00ffd5.png." alt="Card image cap">
     </div>
 
-    <div class="card-body pt-2 pl-1">
+    <div class="card-body">
         <h6 class="card-title small text-wide text-truncate pb-1">Card title</h6>
         <h2>
             <a href="./blog-detail.html">Tagline or call-to-action.</a>

@@ -1,3 +1,46 @@
+ %bold{font-weight:600};/** depends on font-fammily**/
+ /* =============================================================================
+   Variables & Mixins
+   ========================================================================== */
+@mixin headline-style ($weight,$mg-top, $mg-bottom){
+    font-family:$headings-font-family;
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    font-weight:$weight;
+    margin-top: $mg-top;
+    margin-bottom: $mg-bottom;
+    color:$foo;
+}
+@mixin post-headline-style{
+    font-weight:bold;
+    letter-spacing: .05em;
+    margin-top:$vertical-spacing;
+}
+%main-headline-style-h3{
+    font-size: 1.2em;
+    font-weight:bold;
+    
+/*    @media screen and (min-device-width:$screen-lg){
+        font-size: 1.43vW;
+    }*/
+    @media screen and (max-device-width:$screen-xs) and (orientation:portrait){
+        font-size:1.2em;
+    }
+    line-height: 1.2;
+    margin-top:1em;
+    margin-bottom: 0.5em;
+}
+%sidebar-headline-style-h3{
+    font-size: 1.286em;
+    font-weight: 600;
+    margin-top:0;
+    text-transform: none;
+}
+@mixin main-menu($weight){
+    font-family:$headings-font-family;
+    text-transform: uppercase;
+    font-weight:$weight;
+}
 /* =============================================================================
    Basics
    ========================================================================== */
@@ -48,6 +91,7 @@ a {
         }
 }
 h1,h2,h3,h4, legend, .number, .widgettitle{
+    @include headline-style (400, 0, 1em);
     line-height: 1.1;
     color: $heading-text-color;
     &.logo{
@@ -81,23 +125,15 @@ h1 {
 h2 {
     font-size:2 * $rem-base;
     line-height: 1.2;
-    margin-bottom:2em;
+    @include post-headline-style;
+    @include header-subline;
 }
 
 h3 {
-    font-size:1.2 * $rem-base;
-    margin-bottom:1em;
+    @extend %main-headline-style-h3;
 }
 
 h1, h2, h3 {
-    text-transform:uppercase;
-    font-weight:600;
-    letter-spacing:.12em;
-    .subline {
-        font-weight:400;
-        text-transform:none;
-        letter-spacing:0em;
-    }
     a{
         &:hover{
             text-decoration:none;
@@ -163,6 +199,8 @@ dl {
 
 dt {
     font-weight: bold;
+    /** oder **/
+    @extend %bold;
 }
 
 dd {

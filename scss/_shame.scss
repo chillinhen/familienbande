@@ -1,11 +1,50 @@
-.container-fluid{
+.top-border{
+    height:.5em;
+    width:100%;
+    @include display(flex);
+    > div {
+        @include flex-basis(25%);
+    }
+    .blue{
+        background:$blue;
+    }
+    .yellow{
+        background:$yellow;
+    }
+    .pink{
+        background:$pink;
+    }
+    .green{
+        background:$green;
+    }
+}
+.navbar-brand{
+    background: transparent url(../img/logo.png) no-repeat center center;
+    background-size:contain;
+    min-width:300px;
+    span {
+        display:block;
+        text-indent:-9999999px;
+    }
+}
+body>header{
+    min-height:70vH;
+    background:transparent url(../img/myles-tan-84040.jpg) no-repeat;
+    background-size:cover;
     
+    [class*="col-"] {
+        padding:40vH 3em 12vH 3em;
+    }
 }
-.row{
-    margin:2em 0;
+section {
+    padding:8em 0;
 }
-.intro{
-    padding:3em 0;
+/*** Typo ***/
+.hero {
+    .claim , .claim *{
+        color:white;
+    }
 }
-
-/*** Kleinkram ***/
+.card-body{
+    padding: 1em 2em;
+}

@@ -1,13 +1,11 @@
 <?php include('includes/header.php'); ?>
+<div class="container-fluid">
+    <div class="row">
+        <?php include('includes/werbung.php'); ?>
+    </div>
+</div>
 <main class="container-fluid">
-    <div class="featured-articles">
-        <div class="intro text-center">
-            <h1>Familienbande24 - alles zu Vornamen, Schwangerschaft, Geburt und Kinder</h1>
-            <p>Auf unseren Seiten findest du viele Infos und praktische Helferlein rund um die Themen Schwangerschaft, Geburt, Kinder und Familie.</p>
-        </div>
-        <div class="row">
-            <?php include('includes/werbung.php'); ?>
-        </div>
+    <section class="featured-articles">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2>Die neuesten Artikel</h2>
@@ -16,8 +14,8 @@
             <div class="col-md-4"><?php include('includes/card.php'); ?></div>
             <div class="col-md-4"><?php include('includes/card.php'); ?></div>
         </div>
-    </div>
-    <div class="content">
+    </section>
+    <section class="content">
         <div class="row">
             <?php include('includes/werbung.php'); ?>
         </div>
@@ -26,7 +24,7 @@
                 <?php include('includes/big-card.php'); ?>
             </div>
             <div class="col-md-4">
-                <?php include('includes/card-advanced-search.php'); ?>
+                
                 <?php include('includes/card-favorites.php'); ?>
                 <?php include('includes/card-text.php'); ?>
             </div>
@@ -34,14 +32,16 @@
         <div class="row">
             <div class="col-md-12 intro text-center">
                 <h2>Unsere Themen</h2>
-                <p>Auf unseren Seiten findest du viele Infos und praktische Helferlein rund um die Themen Schwangerschaft, Geburt, Kinder und Familie.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+
+                <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
             </div>
             <div class="col-md-3"><?php include('includes/block.php'); ?></div>
             <div class="col-md-3"><?php include('includes/block.php'); ?></div>
             <div class="col-md-3"><?php include('includes/block.php'); ?></div>
             <div class="col-md-3"><?php include('includes/block.php'); ?></div>
         </div>
-    </div>
+    </section>
 
 </main>
 <footer class="container-fluid">
