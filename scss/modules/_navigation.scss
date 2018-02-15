@@ -22,4 +22,36 @@
 .nav-link{
     margin-bottom: -.5em;
     padding-bottom: 0;
+    .navbar-nav &{
+        font-weight:700;
+        text-transform:uppercase;
+        color:$text-color; 
+    }
+}
+.navbar-nav{
+    #top-nav &{
+        margin-bottom:-1em;
+    }
+}
+.nav-item{
+    .navbar-nav &{
+        position:relative;
+        margin:0 .5em;
+        &:after{
+            content:'';
+            margin-top:.8em;
+            display:block;
+            height:.2em;
+        }
+        &:hover{
+            &:after{
+                background:$blue;
+                width:100;
+                @include transition(all 200ms ease-out);
+            }
+        }
+    }
+}
+.dropdown-menu{
+    font-size:inherit;
 }

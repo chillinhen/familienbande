@@ -1,14 +1,14 @@
 <div class="card card-default box-shadow cat-knowledge">
     <div class="card-img-top card-zoom">
-        <img class="card-img-top" src="https://dummyimage.com/400x225/eee/00ffd5.png." alt="Card image cap">
+        <img class="card-img-top" src="img/hebamme3.jpg" alt="Card image cap">
     </div>
 
     <div class="card-body">
-         <h6 class="small category">Kategorie</h6>
-       <h3 class="card-title text-truncate">
-            <a href="./blog-detail.html">Tagline or call-to-action.</a>
+         <h6 class="small category">Hebammensuche</h6>
+       <h3 class="card-title">
+            <a href="">Hebammen in ganz Deutschland finden</a>
         </h3>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">Mit unserer bundesweiten Hebammen-Suche findest du ganz einfach die perfekte Hebamme in deiner Nähe - auch wenn du Sonderleistungen suchst oder eine Hebamme mit Fremdsprachen-Kenntnissen benötigst! Mit Hilfe unserer Hebammen-Datenbank kannst du dich genau über die Hebammen in deiner Umgebung informieren ...</p>
+        <a href="#" class="btn btn-primary">mehr Informationen</a>
     </div>
 </div>

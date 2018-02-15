@@ -1,9 +1,6 @@
-<ul class="navbar-nav mr-auto">
-    <li class="nav-item active align-self-md-end">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-    </li>
+<ul class="navbar-nav mr-auto align-items-stretch">
     <li class="nav-item align-self-md-end">
-        <a class="nav-link active" href="#">Wohin?</a>
+        <a class="nav-link" href="#">Wohin?</a>
     </li>
     <li class="nav-item dropdown align-self-md-end">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -12,7 +12,7 @@
     <div class="tab-pane active" id="vornamen" role="tabpanel" aria-labelledby="namen-tab">
         <h3 class="card-title">Gesucht wird ein ... Vorname</h3>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <form class="form-inline" id="vornamen-suche">
+        <form class="form-inline d-flex" id="vornamen-suche">
             <input class="form-control mr-sm-2" type="search" placeholder="Vorname eingeben" aria-label="Suche">
             <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i><span>Suche</span></button>
 
@@ -21,7 +21,7 @@
     <div class="tab-pane" id="hebammen" role="tabpanel" aria-labelledby="hebammen-tab">
         <h3 class="card-title">Gesucht wird eine ... Hebamme</h3>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <form class="form-inline" id="hebammen-suche">
+        <form class="form-inline d-flex" id="hebammen-suche">
             <input class="form-control mr-sm-2" type="search" placeholder="PLZ oder Ort eingeben" aria-label="Suche">
             <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i><span>Suche</span></button>
         </form>

@@ -1,4 +1,4 @@
-<div class="card card-default box-shadow cat-name">
+<div class="card card-default box-shadow">
     <div class="card-body">
         <h6 class="small category">Kategorie</h6>
         <h3 class="card-title text-truncate">

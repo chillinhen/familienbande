@@ -1,7 +1,7 @@
 <div class="block text-center mt-4">
     <h3>
         <div class="icon">
-            <i class="far fa-question-circle"></i>
+            <i class="fas fa-info-circle"></i>
         </div>
         <a href="#">Wissenwertes, Infos, Tipps</a>  
     </h3>

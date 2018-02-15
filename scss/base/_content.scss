@@ -1,34 +1,43 @@
 h2{
-    
+
     .text-center &{
         display:inline-block;
     }
     main &:not(.card-title):after{
-            content:'';
-            height:.3rem;
-            margin-top:1em;
-            width:50%;
-            display: block;
-            @include multiple-border;
-        } 
+        content:'';
+        height:.3rem;
+        margin-top:1em;
+        width:50%;
+        display: block;
+        @include multiple-border;
+    } 
     .text-center &:after{
-            height:.6rem;
-            width:50%;
-            margin:1em auto 0;
-        } 
-    }
+        height:.6rem;
+        width:50%;
+        margin:1em auto 0;
+    } 
+}
 
 .social-media-links{
     color:white;
     position: fixed;
-    top:25vH;
-    right:0;
+    @media screen and (max-width:$screen-sm - 1){
+        bottom:0;
+        right:0;
+    }
+    @media screen and (min-width:$screen-sm){        
+        top:20vH;
+        right:0;
+    }
+
 
     ul{
         margin:0;
+        @media screen and (max-width:$screen-sm - 1){
+            @include display(flex);
+            @include flex-direction(row);
+        }
         li{
-            display:block;
-            margin:0;
             text-align:center;
             line-height:0;
             width:3em;

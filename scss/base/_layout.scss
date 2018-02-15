@@ -1,18 +1,36 @@
 body{
     > header{
-        background:transparent url(../img/andre-hunter-107089.jpg) no-repeat 100% 25%;
-        background-size:cover;
+        
+        @media screen and (min-width:$screen-sm) and (max-width:1919px){
+              background:transparent url(../img/kinder1.jpg) no-repeat 50% 0%;
+              background-size:cover;
+        }
+        @media screen and (min-width:1920px){
+              background:transparent url(../img/kinder1.jpg) no-repeat top left;
+              background-size:cover;
+        }
+      
         position:relative;
 
         .hero {
-            min-height: 100vH;
-            padding-bottom: 5vH;
-            .claim , .claim *{
-                color:white;
+            @media screen and (min-width:$screen-sm){
+                @include gradient-overlay;
             }
-            h1 {
-                @include white-logo(60px);
+           
+            @media screen and (max-width:$screen-sm - 1){
+                padding-top:100px;
             }
+            @media screen and (min-width:$screen-sm){
+                min-height: 75vH;
+                padding-bottom: 5vH;
+                .claim , .claim *{
+                    color:white;
+                }
+                h1 {
+                    @include white-logo(60px);
+                } 
+            }
+            
         }
     }
     > footer {
@@ -25,7 +43,4 @@ body{
 .container-fluid{
     max-width: 1170px;
     margin:0 auto;
-}
-body>header{
-
 }

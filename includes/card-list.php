@@ -1,4 +1,4 @@
-<div class="card  mb-4 box-shadow">
+<div class="card  mb-5 box-shadow">
     <div class="card-body">
         <h3>Die beliebtesten Artikel</h3>
         <ul class="list-group">
