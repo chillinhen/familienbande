@@ -3,7 +3,7 @@
 }
 @mixin clearfix{
     &:before,
-    &:after{
+        &:after{
         content: "";
         display: table;
         clear: both;
@@ -20,12 +20,12 @@
     line-height: 1;
 }
 @mixin tag-line{
-            font-weight:700;
-        text-transform:uppercase;
-        letter-spacing:.1em;
-        font-size: 1.05em;
-        text-align:center;
-        color:#000;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    font-size: 1.05em;
+    text-align:center;
+    color:#000;
 }
 @mixin header-subline{
     &:after {
@@ -39,13 +39,21 @@
 }
 @mixin box-shadow-green{
     -webkit-box-shadow: 5px 5px 0 0 rgba(57,180,112,.75);
-box-shadow: 5px 5px 0 0 rgba(57,180,112,.75);
+    box-shadow: 5px 5px 0 0 rgba(57,180,112,.75);
 }
 @mixin wrapper{
     max-width: 90%;
     margin: 0 auto;
     z-index: 2;
-     @media screen and (min-width:$screen-lg){
+    @media screen and (min-width:$screen-lg){
         width: 1140px;
     }
+}
+@mixin multiple-border{
+    background: linear-gradient(to right, $blue 0%, $blue 25%, $yellow 25%, $yellow 50%, $pink 50%, $pink 75%, $green 75%, $green 100%);
+}
+@mixin white-logo($height){
+     min-height:$height;
+    text-indent: -99999px;
+    background: transparent url(../img/logo-white.png) no-repeat top center / cover;
 }

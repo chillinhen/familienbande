@@ -9,16 +9,20 @@
     text-rendering:optimizeLegibility;
 }
 
-
+.top-border{
+    &:before{
+            content:'';
+    height:.5em;
+    display: block;
+       @include multiple-border; 
+    } 
+}
+.navbar-light{
+    background-color: rgba(255,255,255,.75);
+}
 .btn{
     @include button-style (10px,.7em 1em, 1em );
-
-    @media screen and (max-width:$screen-xs){
-        .row.submit & {
-            margin-bottom:1em;
-        }
-    }
-
+    
     &:hover, &:focus {
         color:#fff;
     }
@@ -42,7 +46,20 @@
         color: $white;
     }
     &[disabled] {opacity: 1;}
+    span{
+        display:none;
+    }
 
+}
+a.btn-primary{
+    color:lighten($brand-primary,100%);
+}
+
+.btn-primary{
+    background: $blue;
+    &:hover{
+        background: darken($brand-primary,10%);
+    }
 }
 
 .iframe-elastic {
@@ -64,3 +81,5 @@
 .no-display{
     display:none;
 }
+
+

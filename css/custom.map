@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/custom.css",
+	"sources": [
+		"../scss/custom.scss"
+	],
+	"sourcesContent": [
+		"/*@import \"bootstrap/scss/functions\";\r\n@import \"bootstrap/scss/variables\";\r\n@import \"bootstrap/scss/mixins\";\r\n\r\n// Optional\r\n@import \"bootstrap/scss/reboot\";\r\n@import \"bootstrap/scss/type\";\r\n@import \"bootstrap/scss/images\";\r\n@import \"bootstrap/scss/code\";\r\n@import \"bootstrap/scss/grid\";*/"
+	],
+	"mappings": "AAAA;;;;;;;;;gCASgC",
+	"names": []
+}

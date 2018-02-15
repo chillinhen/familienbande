@@ -5,8 +5,6 @@
 /* Bsp. @include alpha-background-color(rgba(black, 0.35), white); */
 /******* SVG *********/
 /*** WP Specials ***/
-/**** Filter ****/
-/*** typography***/
 /* Mediaqueries breakpoints */
 /* Helper Classes */
 /*@import "bourbon";*/
@@ -17,9 +15,13 @@
    Typography
    ========================================================================== */
 /* Margins & Paddings */
-/*
-@import 'utils/_mixins';
-@import 'utils/_icons';
+/* line 1, C:/MAMP/htdocs/familienbande/scss/utils/_mixins.scss */
+.foo {
+  border: 1px solid red;
+}
+
+/** Buttons **/
+/*@import 'utils/_icons';
 @import 'utils/_preloader';
 @import 'base/_ui';
 @import 'base/_media';
@@ -28,233 +30,506 @@
 /* =============================================================================
    Basics
    ========================================================================== */
+/* line 5, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
 html {
   font-size: 62.5%;
   -webkit-text-size-adjust: auto;
-  -ms-text-size-adjust: auto; }
+  -ms-text-size-adjust: auto;
+}
 
+/* line 7, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
 html, body, button, input, select, textarea {
   font-family: "Muli", sans-serif;
-  color: #333; }
+  color: #333;
+}
 
+/* line 11, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
 ::-moz-selection {
   text-shadow: none;
-  background: #159EE5;
-  background-image: none !important;
-  color: #fff; }
+}
 
+/* line 14, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
 ::selection {
   text-shadow: none;
-  background: #159EE5;
-  background-image: none !important;
-  color: #fff; }
+}
 
-.element::-moz-selection {
-  background-color: #ffbb52; }
-.element::selection {
-  background-color: #ffbb52; }
-
+/* line 17, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
 body {
   text-rendering: optimizeLegibility;
   font-size: 14px;
   font-weight: 400;
-  line-height: 150%; }
+  line-height: 150%;
+}
 
+/* line 24, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
 a, a:link {
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  color: inherit;
+}
+
+/* line 30, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
 a:visited {
-  opacity: .5; }
+  opacity: .5;
+}
+
+/* line 33, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
 a:visited, a:hover {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+}
+
+/* line 36, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
 a.external:after {
   font-family: 'FontAwesome';
   content: "";
   padding-right: 0;
   opacity: 1;
   margin-left: 0.5em;
-  font-size: 0.8em; }
-#comments a, .post-details a {
-  color: #FF77A5 !important; }
+  font-size: 0.8em;
+}
 
-h1, h2, h3, h4, legend, .number, .widgettitle {
+/* line 40, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+h1, h2, h3, h4 {
   line-height: 1.1;
-  color: #333; }
-  h1.logo, h2.logo, h3.logo, h4.logo, legend.logo, .number.logo, .widgettitle.logo {
-    margin: 2em 0 .5em 0; }
-  h1 a, h2 a, h3 a, h4 a, legend a, .number a, .widgettitle a {
-    text-decoration: none;
-    color: #159EE5; }
-
-h1 {
-  font-size: 21px;
-  line-height: 1;
-  color: #000; }
-  @media screen and (max-width: 480px) {
-    h1 {
-      font-size: 2em; } }
-  @media screen and (min-width: 480px) {
-    h1 {
-      font-size: 2em; }
-      .content > h1:first-child {
-        margin-top: 56px;
-        font-size: 1.2em;
-        padding: 0 28px;
-        font-weight: bold; } }
-
-h2 {
-  font-size: 28px;
-  line-height: 1.2;
-  margin-bottom: 2em; }
-
-h3 {
-  font-size: 16.8px;
-  margin-bottom: 1em; }
-
-h1, h2, h3 {
+  color: #333;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: .12em; }
-  h1 .subline, h2 .subline, h3 .subline {
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: 0em; }
-  h1 a:hover, h2 a:hover, h3 a:hover {
-    text-decoration: none;
-    cursor: pointer; }
+}
 
-h4, .h4, h5, .h5, h6, .h6 {
-  font-size: 1.2em; }
+/* line 46, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+h1 a, h2 a, h3 a, h4 a {
+  text-decoration: none;
+  color: #159EE5;
+}
 
-legend border {
-  width: 1px 0 0 0;
-  style: solid;
-  color: #ccc;
-  margin-top: 1em; }
+/* line 53, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2em;
+}
 
-p {
-  margin: 0 0 1rem;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 150%; }
+/* line 57, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+.text-center h2 {
+  margin: 3em 0 1.4em 0;
+}
 
-a {
-  color: #159EE5; }
-  .page-template-template-maintenance a.post-edit-link {
-    margin-top: 10vH;
-    display: block; }
-  a.post-edit-link:before {
-    font-family: 'FontAwesome';
-    content: "";
-    padding-right: 1em;
-    opacity: 1;
-    margin-left: 0;
-    font-size: 1em; }
+/* line 62, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+main h3 {
+  margin-bottom: 1em;
+}
 
-ul,
-ol {
-  padding-left: 1.5rem; }
-  ul li,
-  ol li {
-    line-height: 150%; }
+/* line 67, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+h5, h6 {
+  display: inline-block;
+}
 
-dl {
-  margin: 0 0 1rem;
-  line-height: 150%; }
+/* line 70, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+h5.category:after, h6.category:after {
+  content: '';
+  display: block;
+  width: 150%;
+  height: .3rem;
+  margin: .5em 0 1em 0;
+}
 
-dt {
-  font-weight: bold; }
+/* line 77, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+.cat-event h5.category:after, .cat-event h6.category:after {
+  background-color: #159EE5;
+}
 
-dd {
-  margin: 0 0 0.5rem; }
+/* line 80, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+.cat-name h5.category:after, .cat-name h6.category:after {
+  background-color: #FF9A34;
+}
 
-b, .bold, strong {
-  font-weight: bold; }
+/* line 83, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+.cat-knowledge h5.category:after, .cat-knowledge h6.category:after {
+  background-color: #FF77A5;
+}
 
-p {
-  font-size: 1em; }
+/* line 86, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+.cat-slogan h5.category:after, .cat-slogan h6.category:after {
+  background-color: #00B470;
+}
 
-blockquote {
+/* line 92, C:/MAMP/htdocs/familienbande/scss/base/_typography.scss */
+p, span {
+  color: inherit;
+}
+
+/* global box-sizing */
+/* line 2, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 13, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.top-border:before {
+  content: '';
+  height: .5em;
+  display: block;
+  background: linear-gradient(to right, #159EE5 0%, #159EE5 25%, #FF9A34 25%, #FF9A34 50%, #FF77A5 50%, #FF77A5 75%, #00B470 75%, #00B470 100%);
+}
+
+/* line 20, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.navbar-light {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 23, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.btn {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border-width: 0;
+  box-shadow: none;
+  padding: 0.7em 1em;
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* line 26, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.btn:hover, .btn:focus {
+  color: #fff;
+}
+
+/* line 29, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.btn.btn-inverse {
+  background-color: #000;
+  color: #fff;
+  background-image: none;
+  background-repeat: repeat-x;
+  border-color: transparent;
+  text-shadow: none;
+}
+
+/* line 37, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.button-group .btn.btn-inverse {
+  margin-right: 1em;
+  color: #fff;
+}
+
+/* line 42, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.btn.btn-small {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border-width: 0;
+  box-shadow: none;
+  padding: 5px 10px;
+  font-size: 0.85em;
+  line-height: 1;
+}
+
+/* line 45, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.box .btn {
+  color: #fff;
+}
+
+/* line 48, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.btn[disabled] {
+  opacity: 1;
+}
+
+/* line 49, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.btn span {
+  display: none;
+}
+
+/* line 54, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+a.btn-primary {
+  color: white;
+}
+
+/* line 58, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.btn-primary {
+  background: #159EE5;
+}
+
+/* line 60, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.btn-primary:hover {
+  background: #117eb6;
+}
+
+/* line 65, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.iframe-elastic {
   position: relative;
-  margin: 1.5rem 1rem 1.5rem 3rem;
-  text-align: left; }
-  blockquote:before {
-    content: "“";
-    display: block;
-    position: absolute;
-    top: -1rem;
-    left: -3rem;
-    color: #737373;
-    font-size: 5rem;
-    line-height: 1; }
+  padding-bottom: 55%;
+  padding-top: 15px;
+  height: 0;
+  overflow: hidden;
+}
 
-address {
-  font-style: normal; }
-  .footer address p {
-    margin-bottom: 0.2rem;
-    font-size: .8rem; }
-  .footer address > div {
-    margin-bottom: 0.5rem; }
-
-.text-left {
-  text-align: left; }
-
-.text-center {
-  text-align: center; }
-
-.text-right {
-  text-align: right; }
-
-.text-muted {
-  color: #737373; }
-
-.text-smaller {
-  font-size: smaller; }
-
-.uppercase {
-  text-transform: uppercase; }
-
-/*** tables ****/
-table {
+/* line 72, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.iframe-elastic iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin-bottom: 2em; }
-  table th {
-    text-align: left;
-    font-size: larger; }
-  table tr:nth-child(odd) td {
-    background: #ebebeb; }
+  height: 100%;
+}
 
-/**** Misc ***/
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden; }
+/* line 81, C:/MAMP/htdocs/familienbande/scss/base/_globals.scss */
+.no-display {
+  display: none;
+}
 
-/* Kleinerer Text */
-.s {
-  font-size: 0.9em; }
+/* line 2, C:/MAMP/htdocs/familienbande/scss/base/_layout.scss */
+body > header {
+  background: transparent url(../img/andre-hunter-107089.jpg) no-repeat 100% 25%;
+  background-size: cover;
+  position: relative;
+}
 
-@media screen and (min-width: 480px) {
-  .lead, blockquote p {
-    font-size: 1.143em;
-    font-weight: inherit;
-    line-height: inherit;
-    margin-bottom: 1.857em; }
-    article.banner .lead, article.banner blockquote p, blockquote article.banner p, .banner-caption .lead, .banner-caption blockquote p, blockquote .banner-caption p {
-      margin-bottom: 1em; }
-    .panel .lead, .panel blockquote p, blockquote .panel p {
-      font-size: 1em; } }
+/* line 7, C:/MAMP/htdocs/familienbande/scss/base/_layout.scss */
+body > header .hero {
+  min-height: 100vH;
+  padding-bottom: 5vH;
+}
 
-/*@import 'base/_globals';
-@import 'base/_layout';
+/* line 10, C:/MAMP/htdocs/familienbande/scss/base/_layout.scss */
+body > header .hero .claim, body > header .hero .claim * {
+  color: white;
+}
 
-@import 'modules/_maintenance';
-@import 'modules/_navigation';
-@import 'base/_content';
-@import 'base/_media';
+/* line 13, C:/MAMP/htdocs/familienbande/scss/base/_layout.scss */
+body > header .hero h1 {
+  min-height: 60px;
+  text-indent: -99999px;
+  background: transparent url(../img/logo-white.png) no-repeat top center/cover;
+}
+
+/* line 18, C:/MAMP/htdocs/familienbande/scss/base/_layout.scss */
+body > footer {
+  background: #159EE5;
+}
+
+/* line 20, C:/MAMP/htdocs/familienbande/scss/base/_layout.scss */
+body > footer * {
+  color: white;
+}
+
+/* line 25, C:/MAMP/htdocs/familienbande/scss/base/_layout.scss */
+.container-fluid {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/** navigation ***/
+/* line 2, C:/MAMP/htdocs/familienbande/scss/modules/_navigation.scss */
+.navbar-brand {
+  background: transparent url(../img/logo.png) no-repeat left bottom;
+  min-height: 50px;
+  min-width: 250px;
+  background-size: contain;
+}
+
+/* line 3, C:/MAMP/htdocs/familienbande/scss/modules/_navigation.scss */
+.navbar-brand.bg-image {
+  display: inline-block;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 2, C:/MAMP/htdocs/familienbande/scss/modules/_navigation.scss */
+  .navbar-brand {
+    min-width: 50px;
+    background-size: auto 70%;
+  }
+}
+
+/* line 17, C:/MAMP/htdocs/familienbande/scss/modules/_navigation.scss */
+.navbar-brand span {
+  display: block;
+  text-indent: -9999999px;
+}
+
+/* line 22, C:/MAMP/htdocs/familienbande/scss/modules/_navigation.scss */
+.nav-link {
+  margin-bottom: -.5em;
+  padding-bottom: 0;
+}
+
+/* line 3, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.text-center h2 {
+  display: inline-block;
+}
+
+/* line 6, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+main h2:not(.card-title):after {
+  content: '';
+  height: .3rem;
+  margin-top: 1em;
+  width: 50%;
+  display: block;
+  background: linear-gradient(to right, #159EE5 0%, #159EE5 25%, #FF9A34 25%, #FF9A34 50%, #FF77A5 50%, #FF77A5 75%, #00B470 75%, #00B470 100%);
+}
+
+/* line 14, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.text-center h2:after {
+  height: .6rem;
+  width: 50%;
+  margin: 1em auto 0;
+}
+
+/* line 21, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.social-media-links {
+  color: white;
+  position: fixed;
+  top: 25vH;
+  right: 0;
+}
+
+/* line 27, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.social-media-links ul {
+  margin: 0;
+}
+
+/* line 29, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.social-media-links ul li {
+  display: block;
+  margin: 0;
+  text-align: center;
+  line-height: 0;
+  width: 3em;
+  padding: .5em;
+}
+
+/* line 36, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.social-media-links ul li:nth-child(1), .social-media-links ul li:nth-child(5) {
+  background: #159EE5;
+}
+
+/* line 39, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.social-media-links ul li:nth-child(2), .social-media-links ul li:nth-child(6) {
+  background: #FF9A34;
+}
+
+/* line 42, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.social-media-links ul li:nth-child(3), .social-media-links ul li:nth-child(7) {
+  background: #FF77A5;
+}
+
+/* line 45, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.social-media-links ul li:nth-child(4), .social-media-links ul li:nth-child(8) {
+  background: #00B470;
+}
+
+/* line 48, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.social-media-links ul li a {
+  font-size: 2em;
+}
+
+/* line 50, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.social-media-links ul li a:hover, .social-media-links ul li a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 55, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.social-media-links ul li a span {
+  display: block;
+  text-indent: -99999px;
+}
+
+/* line 64, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.cta * {
+  color: white;
+}
+
+/* line 67, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.cta .tab-content {
+  margin-top: 8px;
+  background: #FF9A34;
+  padding: 2em;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 73, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.cta .nav-tabs {
+  border: 0;
+}
+
+/* line 75, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.cta .nav-tabs .nav-link {
+  background: #ffb367;
+  border: 0;
+}
+
+/* line 79, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.cta .nav-tabs .nav-item.show .nav-link, .cta .nav-tabs .nav-link.active {
+  background: #FF9A34;
+  color: white;
+}
+
+/*** Content ***/
+/* line 89, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.list-group-item {
+  border-width: 0 0 1px 0;
+  margin: 0;
+  padding: 1em .5em;
+  border-color: currentColor;
+  background: transparent;
+}
+
+/* line 95, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.list-group-item:last-child {
+  border: 0;
+}
+
+/* line 98, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+footer .list-group-item-action:hover, footer list-group-item-action:focus {
+  color: white;
+  background: #117eb6;
+}
+
+/* line 103, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.card-body {
+  padding: 2em 2.4em;
+}
+
+/* line 107, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.icon {
+  padding: 0 2em .5em;
+  font-size: 3em;
+}
+
+/* line 112, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.cat-event .icon {
+  color: #159EE5;
+}
+
+/* line 116, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.cat-name .icon {
+  color: #FF9A34;
+}
+
+/* line 117, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.cat-knowledge .icon {
+  color: #FF77A5;
+}
+
+/* line 118, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.cat-slogan .icon {
+  color: #00B470;
+}
+
+/* line 120, C:/MAMP/htdocs/familienbande/scss/base/_content.scss */
+.icon + a {
+  min-height: 40px;
+  display: block;
+}
+
+/*@import 'base/_media';
 @import 'base/_forms';
 
 @import 'base/_maps';
@@ -268,53 +543,36 @@ table {
 /*
 @import 'modules/_widgets';
 @import 'modules/_posts';*/
-.top-border {
-  height: .5em;
-  width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .top-border > div {
-    -webkit-flex-basis: 25%;
-    -moz-flex-basis: 25%;
-    flex-basis: 25%;
-    -ms-flex-preferred-size: 25%; }
-  .top-border .blue {
-    background: #159EE5; }
-  .top-border .yellow {
-    background: #FF9A34; }
-  .top-border .pink {
-    background: #FF77A5; }
-  .top-border .green {
-    background: #00B470; }
+/* line 2, C:/MAMP/htdocs/familienbande/scss/_shame.scss */
+footer .about h3 {
+  min-height: 40px;
+  text-indent: -99999px;
+  background: transparent url(../img/logo-white.png) no-repeat top center/cover;
+}
 
-.navbar-brand {
-  background: transparent url(../img/logo.png) no-repeat center center;
-  background-size: contain;
-  min-width: 300px; }
-  .navbar-brand span {
-    display: block;
-    text-indent: -9999999px; }
+/* line 8, C:/MAMP/htdocs/familienbande/scss/_shame.scss */
+.cat-event .btn {
+  background: #159EE5;
+}
 
-body > header {
-  min-height: 70vH;
-  background: transparent url(../img/myles-tan-84040.jpg) no-repeat;
-  background-size: cover; }
-  body > header [class*="col-"] {
-    padding: 40vH 3em 12vH 3em; }
+/* line 9, C:/MAMP/htdocs/familienbande/scss/_shame.scss */
+.cat-name .btn {
+  background: #FF9A34;
+}
 
-section {
-  padding: 8em 0; }
+/* line 10, C:/MAMP/htdocs/familienbande/scss/_shame.scss */
+.cat-knowledge .btn {
+  background: #FF77A5;
+}
 
-/*** Typo ***/
-.hero .claim, .hero .claim * {
-  color: white; }
+/* line 11, C:/MAMP/htdocs/familienbande/scss/_shame.scss */
+.cat-slogan .btn {
+  background: #00B470;
+}
 
-.card-body {
-  padding: 1em 2em; }
+/* line 12, C:/MAMP/htdocs/familienbande/scss/_shame.scss */
+[class*="cat-"] .btn {
+  color: white;
+}
 
-/*# sourceMappingURL=screen.css.map */
+/*# sourceMappingURL=../css/screen.map */

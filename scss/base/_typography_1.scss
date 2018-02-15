@@ -45,32 +45,8 @@
    Basics
    ========================================================================== */
 
-html { font-size: 62.5%; -webkit-text-size-adjust: auto; -ms-text-size-adjust: auto;}
-
-html, body, button, input, select, textarea { 
-    font-family:$body-font-family;
-    color: $text-color; }
-
-::-moz-selection { 
-    text-shadow: none;
-    @include active-style;
-}
-::selection { 
-    text-shadow: none;
-    @include active-style;
-}
-.element {
-  @include selection(true) {
-    background-color: #ffbb52;
-  }
-}
 // body typography
-body {
-    text-rendering: optimizeLegibility;
-    font-size:$rem-base;
-    font-weight:400;
-    line-height: $base-line-height;
-}
+
 a {
     &,&:link { 
         text-decoration: none;
@@ -90,18 +66,7 @@ a {
             color: $brand-secondary !important;
         }
 }
-h1,h2,h3,h4, legend, .number, .widgettitle{
-    @include headline-style (400, 0, 1em);
-    line-height: 1.1;
-    color: $heading-text-color;
-    &.logo{
-        margin:2em 0 .5em 0;
-    }
-    a{
-        text-decoration: none;
-        color: $brand-primary;
-    }
-}
+
 
 // different font-sizes
 h1 {

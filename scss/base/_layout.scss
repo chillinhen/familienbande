@@ -1,33 +1,31 @@
-body:not(.page-template-template-maintenance),
-body:not(.error404){
-    background:$body-bg;
-}
-.wrapper{
-    > div {
-        background:$body-bg;
-    }
-    @media screen and (min-width:$screen-xs){
-        @include outer-container(1200px);
-        padding:$outer-grid;
-    }
-}
-.header {
-        .logo {
-            margin:$vertical-spacing 0;
-            img {
-                height:120px;
+body{
+    > header{
+        background:transparent url(../img/andre-hunter-107089.jpg) no-repeat 100% 25%;
+        background-size:cover;
+        position:relative;
+
+        .hero {
+            min-height: 100vH;
+            padding-bottom: 5vH;
+            .claim , .claim *{
+                color:white;
             }
-            span{
-                @include tag-line;
-                display:block;
-                margin-top:$vertical-spacing;
+            h1 {
+                @include white-logo(60px);
             }
         }
-    } 
-.header-image{
-    min-height: 25vH;
-     max-height: 50vH;
-    background-position: center center;
-    background-attachment: fixed;
+    }
+    > footer {
+        background: $blue;
+        *{
+            color:lighten($blue,100%)
+        }
+    }
 }
-.footer{text-align: center;}
+.container-fluid{
+    max-width: 1170px;
+    margin:0 auto;
+}
+body>header{
+
+}
