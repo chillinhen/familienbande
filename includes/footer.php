@@ -30,5 +30,7 @@
                     </div>
                 </div>
             </div>
+            <?php include('includes/social-media.php'); ?>
         </div>
+    
     </footer>

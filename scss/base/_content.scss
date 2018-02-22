@@ -18,61 +18,12 @@ h2{
     } 
 }
 
-.social-media-links{
-    color:white;
-    position: fixed;
-    @media screen and (max-width:$screen-sm - 1){
-        bottom:0;
-        right:0;
-    }
-    @media screen and (min-width:$screen-sm){        
-        top:20vH;
-        right:0;
-    }
 
-
-    ul{
-        margin:0;
-        @media screen and (max-width:$screen-sm - 1){
-            @include display(flex);
-            @include flex-direction(row);
-        }
-        li{
-            text-align:center;
-            line-height:0;
-            width:3em;
-            padding:.5em;
-            &:nth-child(1), &:nth-child(5){
-                background:$blue;
-            }
-            &:nth-child(2), &:nth-child(6){
-                background:$yellow;
-            }
-            &:nth-child(3), &:nth-child(7){
-                background:$pink;
-            }
-            &:nth-child(4), &:nth-child(8){
-                background:$green;
-            }
-            a{
-                font-size:2em;
-                &:hover, &:focus{
-                    text-decoration: none;
-                    outline: none
-                }
-
-                span {
-                    display: block;
-                    text-indent: -99999px;
-                }
-            }
-        }
-    }
-}
 .cta{
-    *{
-        color:white;
-    }
+ .card{background:$yellow;}
+*{color:white;}
+}
+
     .tab-content{
         margin-top:8px;
         background:$yellow;
@@ -90,10 +41,6 @@ h2{
             color:white;
         }
     }
-
-}
-
-
 /*** Content ***/
 .list-group-item{
     border-width: 0 0 1px 0;
@@ -113,21 +60,3 @@ h2{
     padding:2em 2.4em;
 }
 
-.icon{
-
-    padding: 0 2em .5em;
-    font-size: 3em;
-
-    .cat-event & {
-        color: $blue;
-
-    }
-    .cat-name & {color: $yellow;}
-    .cat-knowledge & {color: $pink;}
-    .cat-slogan & {color: $green;}
-
-    + a {
-        min-height: 40px;
-        display:block;
-    }
-}

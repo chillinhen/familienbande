@@ -18,7 +18,7 @@ input[type="reset"],
 input[type="submit"]{
     margin:0 .5em;
     @include button-style (3px, 1em, 1em);
-    background:$bg-inverse;
+    background:$brand-primary;
     color:$white;
 }
 input[type="text"],
@@ -67,93 +67,14 @@ label{
     font-weight:400;
     display:block;
 }
-.wpcf7{
-    margin-bottom: 2em;
-    .row{
-        margin:{
-            right:0;
-            left:0;
-        }
-    }
-    .row.submit{
-        margin-top: 2em;
-        text-align:right;
-    }
-    .row:not(.submit){
-        margin-bottom:$vertical-spacing;
-    }
-    .row.checkbox > [class*="-12"]{
-        padding:0;
-        margin:0;
-    }
-    img#captcha{
-        max-width:none;
-        width:auto;
-        height:36px;
-        margin-right:1em;
-    }
-}
-.wpcf7-form-control-wrap{
-    display:block;
-    width:100%;
-    > * {
-        width:100%;
-    }
-    input[type="checkbox"] {
-        position:static;
-        margin:{
-            top:0;
-            left:1em;
-        }
-    }
-    input[type="checkbox"].wpcf7-acceptance{
-        float:left;
-        @include size (1em);
-        margin:{
-            right:1em;
-            /*left:0;*/
-        }
-/*        margin-bottom:2em;*/
-    }
-    > .wpcf7-checkbox {
-        display:block;
-        /*special for Contact/Appointments*/
-        &#time{
-            
-            @include outer-container;
-            .wpcf7-list-item{
-                @include span-columns(5);
-            }
-            .wpcf7-list-item:nth-child(even){
-                @include omega();
-            }
-        }
-    
-    }
-}
-.wpcf7-not-valid,
-.wpcf7-validation-errors,
-.wpcf7-message-mail-sent-ng,
-.wpcf7-message-spam,
-.wpcf7-message-invalid-email,
-.wpcf7-message-upload-failed-php-error{ 
-    border: 2px solid $brand-danger !important;
-    background:$brand-warning;
-}
-.wpcf7-message-accept-terms,
-.wpcf7-message-upload-failed,
-.wpcf7-message-upload-file-type-invalid,
-.wpcf7-message-upload-file-too-large{
-    background: $brand-danger;
-    color:$white;
-}
-.wpcf7-mail-sent-ok {
-    font-size: large;
-    color: $brand-success;
-    font-style: italic;
-    line-height: 2;
-    padding: 2em;
-    border: 0;
-    background: transparent;
-}
 
+.form-inline{
+        @media screen and (max-width:$screen-xs){
+            margin-top:2em;
+        }
+    }
+    .form-control{
+    @media screen and (max-width:$screen-sm - 1){
+        width:80%;
+    }
+}

@@ -1,6 +1,6 @@
 body{
-    > header{
-        
+    .top-fold{
+        padding-top:75px;
         @media screen and (min-width:$screen-sm) and (max-width:1919px){
               background:transparent url(../img/kinder1.jpg) no-repeat 50% 0%;
               background-size:cover;
@@ -9,20 +9,19 @@ body{
               background:transparent url(../img/kinder1.jpg) no-repeat top left;
               background-size:cover;
         }
-      
-        position:relative;
+        
 
         .hero {
-            @media screen and (min-width:$screen-sm){
+/*            @media screen and (min-width:$screen-sm){
                 @include gradient-overlay;
             }
            
             @media screen and (max-width:$screen-sm - 1){
                 padding-top:100px;
-            }
+            }*/
             @media screen and (min-width:$screen-sm){
-                min-height: 75vH;
-                padding-bottom: 5vH;
+                min-height: 55vH;
+                padding-bottom: 15vH;
                 .claim , .claim *{
                     color:white;
                 }
@@ -34,10 +33,14 @@ body{
         }
     }
     > footer {
-        background: $blue;
+        background: $green;
+        position:relative;
         *{
             color:lighten($blue,100%)
         }
+        .about h3 {
+        @include white-logo(40px);
+    }
     }
 }
 .container-fluid{

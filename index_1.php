@@ -18,7 +18,7 @@
         <title>Familienbande24 - alles zu Vornamen, Schwangerschaft, Geburt und Kinder</title>
     </head>
     <body id="dummyBodyId">
-        <?php include('includes/template.php'); ?>
+        <?php include('includes/home.php'); ?>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

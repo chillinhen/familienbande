@@ -15,13 +15,14 @@
         </nav>
 
     </div>
-    <div class="container-fluid">
+    <div class="top-fold">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 text-center ads">
                     <img class="leaderboard" src="https://dummyimage.com/970x90/eee/00ffd5.png." alt="Dummy Leaderboard">
                 </div>
             </div>
-            <div class="row align-items-end">
+            <div class="row align-items-end hero">
                 <div class="claim col-sm-6 col-lg-4 offset-lg-2">
                 <h1>Familienbande24</h1>
                 <h2 class="subline">alles zu Vornamen, Schwangerschaft, Geburt und Kinder</h2>
@@ -32,4 +33,5 @@
             </div>
             </div>
         </div>
+    </div>
 </header>

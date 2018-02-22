@@ -5,16 +5,22 @@ jQuery(document).ready(function ($) {
         e.preventDefault()
         $(this).tab('show')
     })
+    //dropdown menus
+    $('.dropdown-submenu a').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
     // sticky nav
-    var stickyNavTop = $('#top-nav').offset().top;
+    var stickyNavTop = $('.bd-sidebar').offset().top;
 
         var stickyNav = function () {
             var scrollTop = $(window).scrollTop();
 
             if (scrollTop > stickyNavTop) {
-                $('#top-nav').addClass('sticky');
+                $('.bd-sidebar').addClass('sticky');
             } else {
-                $('#top-nav').removeClass('sticky');
+                $('.bd-sidebar').removeClass('sticky');
             }
         };
 

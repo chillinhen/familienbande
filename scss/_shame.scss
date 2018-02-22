@@ -1,96 +1,24 @@
-#top-nav{
-   
-     z-index:99;
-     position:absolute;
-     top:0;
-     left:0;right:0;
-    &.sticky{
-        position:fixed;
-        .navbar-light{
-            background:white;
-            @include transition(all 200ms ease-out);
-            @include shadow;
-        }
-    } 
+.icon{
 
-}
-.form-inline{
-        @media screen and (max-width:$screen-xs){
-            margin-top:2em;
-        }
-    }
-footer {
-    *{color:white !important;}
-    .about h3 {
-        @include white-logo(40px);
+    padding: 0 2em .5em;
+    font-size: 3em;
+    color:white;
+
+    + a {
+        min-height: 40px;
+        display:block;
     }
 }
-
-.btn{
-    .cat-event & {
-        background: $blue;
-        &:hover{
-           background: darken($blue,30%); 
-        }
-    }
-    .cat-name & {
-        background: $yellow;
-        &:hover{
-           background: darken($yellow,30%); 
-        }
-    }
-    .cat-knowledge & {
-        background: $pink;
-        &:hover{
-           background: darken($pink,30%); 
-        }
-    }
-    .cat-slogan & {
-        background: $green;
-        &:hover{
-           background: darken($green,30%); 
-        }
-    }
-    [class*="cat-"] & {
-        color:white;
-    }
-}
-
-.card-img-top{
+.topics{
+    margin-top:-2em;
+    @include border-left-radius(2em);
+    @include border-right-radius(2em);
     overflow:hidden;
-    @media screen and (max-width:$screen-sm - 1){
-        .featured &,.content & {
-            height:200px;
-        }
-    }
-    @media screen and (min-width:$screen-sm){
-        .featured & {
-            height:230px;
-        }
-        .content & {
-            height:450px;
-        }
-    }
+    [class*="col-"]{padding:1em;}
+    *{color:white;}
+    .cat-event {background: $blue;}
+    .cat-name {background: $yellow;}
+    .cat-knowledge {background: $pink;}
+    .cat-slogan {background: $green;}
+}
 
-}
-.card-zoom{
-    img {}
-    &:hover{
-        cursor:pointer;
-        img {
-           @include size(110%);
-           @include transition(all 200ms ease-out);
-        }
-    }
-}
-.ads{
-    margin:2em 0;
-    &:hover{
-        cursor:pointer;
-    }
-}
-.form-control{
-    @media screen and (max-width:$screen-sm - 1){
-        width:80%;
-    }
-}

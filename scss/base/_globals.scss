@@ -58,7 +58,33 @@
     span{
         display:none;
     }
-
+        .cat-event & {
+        background: $blue;
+        &:hover{
+           background: darken($blue,30%); 
+        }
+    }
+    .cat-name & {
+        background: $yellow;
+        &:hover{
+           background: darken($yellow,30%); 
+        }
+    }
+    .cat-knowledge & {
+        background: $pink;
+        &:hover{
+           background: darken($pink,30%); 
+        }
+    }
+    .cat-slogan & {
+        background: $green;
+        &:hover{
+           background: darken($green,30%); 
+        }
+    }
+    [class*="cat-"] & {
+        color:white;
+    }
 }
 a.btn-primary{
     color:lighten($brand-primary,100%);
@@ -90,5 +116,64 @@ a.btn-primary{
 .no-display{
     display:none;
 }
+.bubble{
+    position:relative;
+    @include border-top-radius(15px);
+       @include border-bottom-radius(15px);
+    &:after{
+        content:'';
+        bottom: -48px;
+        position: absolute;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 48px 0px 0 48px;
+        border-color: $yellow transparent transparent transparent;
+        right: 116px;
+    }
+}
+.social-media-links{
+    color:white;
+    position:absolute;
+    top:-4em;
+    right:0;
 
+
+    ul{
+        margin:0;
+        @include display(flex);
+        @include flex-direction(row);
+        li{
+            text-align:center;
+            line-height:0;
+            width:3em;
+            padding:.5em;
+            &:nth-child(1), &:nth-child(5){
+                background:$blue;
+            }
+            &:nth-child(2), &:nth-child(6){
+                background:$yellow;
+            }
+            &:nth-child(3), &:nth-child(7){
+                background:$pink;
+            }
+            &:nth-child(4), &:nth-child(8){
+                background:$green;
+            }
+            a{
+                font-size:2em;
+                &:hover, &:focus{
+                    text-decoration: none;
+                    outline: none
+                }
+
+                span {
+                    display: block;
+                    text-indent: -99999px;
+                }
+            }
+        }
+    }
+}
 
