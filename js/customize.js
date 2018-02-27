@@ -11,19 +11,6 @@ jQuery(document).ready(function ($) {
     e.stopPropagation();
     e.preventDefault();
   });
-    // sticky nav
-    var stickyNavTop = $('.bd-sidebar').offset().top;
 
-        var stickyNav = function () {
-            var scrollTop = $(window).scrollTop();
-
-            if (scrollTop > stickyNavTop) {
-                $('.bd-sidebar').addClass('sticky');
-            } else {
-                $('.bd-sidebar').removeClass('sticky');
-            }
-        };
-
-        stickyNav();
-        $(window).scroll(stickyNav);
+  stickybits('.fixedsticky', { useStickyClasses: true });
 });

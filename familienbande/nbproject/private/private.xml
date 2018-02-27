@@ -5,9 +5,12 @@
         <group name="familienbande24"/>
         <group name="familienbande">
             <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/includes/template.php</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/includes/template_home.php</file>
             <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/includes/header.php</file>
-            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/scss/modules/_navigation.scss</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/scss/_shame.scss</file>
             <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/js/customize.js</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/index.php</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/snippet.php</file>
         </group>
     </open-files>
 </project-private>

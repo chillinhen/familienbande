@@ -450,6 +450,34 @@ footer .list-group-item-action:hover, footer list-group-item-action:focus {
 .card-body {
   padding: 2em 2.4em; }
 
+.icon {
+  padding: 0 2em .5em;
+  font-size: 3em;
+  color: white; }
+  .icon + a {
+    min-height: 40px;
+    display: block; }
+
+.topics {
+  margin-top: -2em;
+  border-bottom-left-radius: 2em;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-top-right-radius: 2em;
+  overflow: hidden; }
+  .topics [class*="col-"] {
+    padding: 1em; }
+  .topics * {
+    color: white; }
+  .topics .cat-event {
+    background: #159EE5; }
+  .topics .cat-name {
+    background: #FF9A34; }
+  .topics .cat-knowledge {
+    background: #FF77A5; }
+  .topics .cat-slogan {
+    background: #00B470; }
+
 .card-img-top {
   overflow: hidden; }
   @media screen and (max-width: 767px) {
@@ -596,32 +624,38 @@ label {
 /*
 @import 'modules/_widgets';
 @import 'modules/_posts';*/
-.icon {
-  padding: 0 2em .5em;
-  font-size: 3em;
-  color: white; }
-  .icon + a {
-    min-height: 40px;
-    display: block; }
+/* formatting */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
 
-.topics {
-  margin-top: -2em;
-  border-bottom-left-radius: 2em;
-  border-top-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-  border-top-right-radius: 2em;
-  overflow: hidden; }
-  .topics [class*="col-"] {
-    padding: 1em; }
-  .topics * {
-    color: white; }
-  .topics .cat-event {
-    background: #159EE5; }
-  .topics .cat-name {
-    background: #FF9A34; }
-  .topics .cat-knowledge {
-    background: #FF77A5; }
-  .topics .cat-slogan {
-    background: #00B470; }
+html {
+  height: 100%;
+  font-size: 100%; }
+
+body {
+  height: 100%; }
+
+p {
+  margin-bottom: 1em; }
+
+footer {
+  height: 100%; }
+
+.main {
+  padding: 1.5em 3em 1.5em 1.5em; }
+
+.sidebar {
+  padding: 2em 1.5em; }
+
+.large-photo {
+  height: 0;
+  padding-top: 61.9%;
+  background-color: #333;
+  margin-bottom: 1em; }
 
 /*# sourceMappingURL=screen.css.map */

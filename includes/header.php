@@ -1,5 +1,5 @@
 <header>
-    <div id="top-nav">
+    <div id="top-nav" class="fixedsticky">
         <nav class="navbar navbar-light navbar-expand-md">
 
             <div class="container-fluid align-items-stretch">

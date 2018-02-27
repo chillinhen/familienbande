@@ -60,3 +60,26 @@ h2{
     padding:2em 2.4em;
 }
 
+.icon{
+
+    padding: 0 2em .5em;
+    font-size: 3em;
+    color:white;
+
+    + a {
+        min-height: 40px;
+        display:block;
+    }
+}
+.topics{
+    margin-top:-2em;
+    @include border-left-radius(2em);
+    @include border-right-radius(2em);
+    overflow:hidden;
+    [class*="col-"]{padding:1em;}
+    *{color:white;}
+    .cat-event {background: $blue;}
+    .cat-name {background: $yellow;}
+    .cat-knowledge {background: $pink;}
+    .cat-slogan {background: $green;}
+}
