@@ -17,18 +17,15 @@
     </div>
     <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 text-center ads">
+                <div class="col-sm-12 text-center ads d-none d-lg-block d-xl-none">
                     <img class="leaderboard" src="https://dummyimage.com/970x90/eee/00ffd5.png." alt="Dummy Leaderboard">
                 </div>
             </div>
             <div class="row align-items-end">
-                <div class="claim col-sm-6 col-lg-4 offset-lg-2">
+                <div class="claim col-sm-12 col-lg-4 offset-lg-2">
                 <h1>Familienbande24</h1>
                 <h2 class="subline">alles zu Vornamen, Schwangerschaft, Geburt und Kinder</h2>
                 <p><strong>Auf unseren Seiten findest du viele Infos und praktische Helferlein rund um die Themen Schwangerschaft, Geburt, Kinder und Familie.</strong></p>
-            </div>
-            <div class="cta col-sm-6 col-lg-4">
-                <?php include('includes/card-vorname-des-tages.php'); ?>
             </div>
             </div>
         </div>

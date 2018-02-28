@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <?php include('includes/social-media.php'); ?>
+            <?php #include('includes/social-media.php'); ?>
         </div>
     
     </footer>

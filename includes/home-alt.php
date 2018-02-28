@@ -23,18 +23,18 @@
                 <p class="pb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br/>
                     Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
             </div>
-            <div class="col-md-3 cat-event"><?php include('includes/block-event.php'); ?></div>
-            <div class="col-md-3 cat-name"><?php include('includes/block-name.php'); ?></div>
-            <div class="col-md-3 cat-knowledge"><?php include('includes/block-knowledge.php'); ?></div>
-            <div class="col-md-3 cat-slogan"><?php include('includes/block-slogans.php'); ?></div>
+            <div class="col-md-3 cat-yellow"><?php include('includes/block-event.php'); ?></div>
+            <div class="col-md-3 cat-yellow"><?php include('includes/block-name.php'); ?></div>
+            <div class="col-md-3 cat-pink"><?php include('includes/block-knowledge.php'); ?></div>
+            <div class="col-md-3 cat-green"><?php include('includes/block-slogans.php'); ?></div>
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2>Die neuesten Artikel</h2>
             </div>
-            <div class="col-md-4 cat-name"><?php include('includes/card-01.php'); ?></div>
-            <div class="col-md-4 cat-knowledge"><?php include('includes/card-02.php'); ?></div>
-            <div class="col-md-4 cat-event"><?php include('includes/card-03.php'); ?></div>
+            <div class="col-md-4 cat-yellow"><?php include('includes/card-01.php'); ?></div>
+            <div class="col-md-4 cat-pink"><?php include('includes/card-02.php'); ?></div>
+            <div class="col-md-4 cat-yellow"><?php include('includes/card-03.php'); ?></div>
         </div>
     </section>
     <section class="content">
@@ -51,9 +51,9 @@
             </div>
             <div class="col-md-4 sidebar">
                 <?php include('includes/card-list.php'); ?>
-                <div class="cat-name mb-5"><?php include('includes/card-text.php'); ?></div>
-                <div class="cat-event mb-5"><?php include('includes/card-text.php'); ?></div>
-                <div class="cat-slogan mb-5"><?php include('includes/card-text.php'); ?></div>
+                <div class="cat-yellow mb-5"><?php include('includes/card-text.php'); ?></div>
+                <div class="cat-yellow mb-5"><?php include('includes/card-text.php'); ?></div>
+                <div class="cat-green mb-5"><?php include('includes/card-text.php'); ?></div>
             </div>
         </div>
     </section>

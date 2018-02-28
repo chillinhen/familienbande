@@ -74,16 +74,16 @@ h5,h6{
             height:.3rem;
             margin:.5em 0 1em 0;
         }
-        .cat-event &:after{
+        .cat-yellow &:after{
             background-color: $blue;
         }
-        .cat-name &:after{
+        .cat-yellow &:after{
             background-color: $yellow;
         }
-        .cat-knowledge &:after{
+        .cat-pink &:after{
             background-color: $pink;
         }
-        .cat-slogan &:after{
+        .cat-green &:after{
             background-color: $green;
         }
     }

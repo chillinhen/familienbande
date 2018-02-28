@@ -1,4 +1,4 @@
-<div class="card card-default box-shadow cat-knowledge">
+<div class="card card-default box-shadow cat-pink">
     <div class="card-img-top card-zoom">
         <img class="card-img-top" src="img/hebamme3.jpg" alt="Card image cap">
     </div>

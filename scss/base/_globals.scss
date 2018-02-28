@@ -58,25 +58,25 @@
     span{
         display:none;
     }
-        .cat-event & {
+        .cat-yellow & {
         background: $blue;
         &:hover{
            background: darken($blue,30%); 
         }
     }
-    .cat-name & {
+    .cat-yellow & {
         background: $yellow;
         &:hover{
            background: darken($yellow,30%); 
         }
     }
-    .cat-knowledge & {
+    .cat-pink & {
         background: $pink;
         &:hover{
            background: darken($pink,30%); 
         }
     }
-    .cat-slogan & {
+    .cat-green & {
         background: $green;
         &:hover{
            background: darken($green,30%); 

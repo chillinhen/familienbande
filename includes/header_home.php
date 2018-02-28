@@ -1,5 +1,5 @@
 <header>
-    <div id="top-nav">
+    <div id="top-nav" class="fixedsticky">
         <nav class="navbar navbar-light navbar-expand-md">
 
             <div class="container-fluid align-items-stretch">
@@ -15,23 +15,21 @@
         </nav>
 
     </div>
-    <div class="top-fold">
-        <div class="container-fluid">
+    <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 text-center ads">
+                <div class="col-sm-12 text-center ads d-none d-lg-block d-xl-none">
                     <img class="leaderboard" src="https://dummyimage.com/970x90/eee/00ffd5.png." alt="Dummy Leaderboard">
                 </div>
             </div>
-            <div class="row align-items-end hero">
+            <div class="row align-items-end">
                 <div class="claim col-sm-6 col-lg-4 offset-lg-2">
                 <h1>Familienbande24</h1>
                 <h2 class="subline">alles zu Vornamen, Schwangerschaft, Geburt und Kinder</h2>
                 <p><strong>Auf unseren Seiten findest du viele Infos und praktische Helferlein rund um die Themen Schwangerschaft, Geburt, Kinder und Familie.</strong></p>
             </div>
-            <div class="cta col-sm-6 col-lg-4">
+            <div class="cta col-sm-6 col-lg-4 d-none d-md-block d-sm-none">
                 <?php include('includes/card-vorname-des-tages.php'); ?>
             </div>
             </div>
         </div>
-    </div>
 </header>
