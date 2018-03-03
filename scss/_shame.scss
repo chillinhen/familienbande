@@ -1,36 +1,28 @@
-.dropdown-menu{
-    padding:0;
-    background:inherit;
-    @include border-radius(0);
-    border:0;
+.parallax{
+    background-repeat:no-repeat;
+    background-color:transparent;
+    background-size:cover;
+    background-attachment: fixed;
     
-    font-size: 1em;
-    color:white;
-    @media screen and (min-width:768px){   
-        top: 3em;
-        left: 85%;
-        min-width: 300px;
+    &.cat-event{
+        background-image:url(../img/myles-tan-84040.jpg);
+        background-position:top left;
+        margin:2em 0 0 0;
     }
-    &.show{
-        margin:0 -15px;
+    &.cat-names{
+        background-image:url(../img/look.jpg);
+        background-position:center center;
+        margin:0 0 2em 0;
     }
-    > li {
-        color:inherit;
-    }
-    .dropdown-item{
-        color:inherit;
-        padding:1em 2em;
-        border-bottom:1px solid currentColor;
-
-        &:hover,
-        &:active,
-        &:focus,
-        &[tabindex="-1"]:focus{
-            background-color:rgba(0,0,0,.5)!important;
-            color:inherit!important;
-        }
-        &:focus{
-            font-weight:bold;
-        }
+    
+    [class*="col-"]{padding:100px 0;}
+    &:before,&:after{
+                content:'';
+                height:.3rem;
+                display: block;
+                @include multiple-border;
+            }
+    * {
+        color:white;
     }
 }

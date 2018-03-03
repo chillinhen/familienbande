@@ -1,25 +1,7 @@
-<?php include('includes/header.php'); ?>
 <main class="main-content container-fluid">
     <div class="row">
         <div class="col-lg-4 sidebar order-lg-2">
-            <aside id="infoblock">
-                <h5 id="btnSuche" class="cat-blue collapsed d-block d-sm-block d-lg-none" data-toggle="collapse" data-target="#collapseSuche" aria-expanded="false" aria-controls="collapseSuche">Vornamen- und Hebammensuche</h5>
-                <div id="collapseSuche" class="collapse" aria-labelledby="btnSuche" data-parent="#infoblock">
-                    <?php include('includes/card-advanced-search.php'); ?>
-                </div>
-                <h5 id="btnListe" class="cat-yellow collapsed d-block d-sm-block d-lg-none" data-toggle="collapse" data-target="#collapseListe" aria-expanded="false" aria-controls="collapseListe">Die beliebtesten Artikel</h5>
-                <div id="collapseListe" class="collapse" aria-labelledby="btnListe" data-parent="#infoblock">
-                    <?php include('includes/card-list.php'); ?>
-                </div>
-                <h5 id="btnText-01" class="cat-pink collapsed d-block d-sm-block d-lg-none" data-toggle="collapse" data-target="#collapseText-01" aria-expanded="false" aria-controls="collapseText-01">Bsp.: Witz der Stunde</h5>
-                <div id="collapseText-01" class="collapse cat-yellow mb-5" aria-labelledby="btnText-01" data-parent="#infoblock">
-                    <?php include('includes/card-text.php'); ?>
-                </div>
-                <h5 id="btnText-02" class="cat-green collapsed d-block d-sm-block d-lg-none" data-toggle="collapse" data-target="#collapseText-02" aria-expanded="false" aria-controls="collapseText-02">Bsp.: Tageshoroskop</h5>
-                <div id="collapseText-02" class="collapse cat-yellow" aria-labelledby="btnText-02" data-parent="#infoblock">
-                    <?php include('includes/card-text.php'); ?>
-                </div>
-            </aside>
+            <?php include('includes/sidebar.php');?>
         </div>
         <div class="col-lg-8 content order-lg-1">
             <?php include('includes/big-card.php'); ?>

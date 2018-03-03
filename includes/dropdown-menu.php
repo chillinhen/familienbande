@@ -1,18 +1,15 @@
-<ul class="dropdown-menu">
-    <li><a class="dropdown-item" tabindex="-1" href="#">Lorem ipsum</a></li>
-    <li><a class="dropdown-item" tabindex="-1" href="#">Dolor sit amet</a></li>
-    <li class="dropdown-submenu">
-        <a class="dropdown-item" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" tabindex="-1" href="#">2nd level item</a></li>
-            <li><a class="dropdown-item" tabindex="-1" href="#">2nd level item</a></li>
-            <li class="dropdown-submenu">
-                <a class="dropdown-item" href="#">Another dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">3rd level item</a></li>
-                    <li><a class="dropdown-item" href="#">3rd level item</a></li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-</ul>
+<li><a class="dropdown-item" tabindex="-1" href="#">Dolor sit amet</a></li>
+<li class="dropdown-submenu">
+    <a class="dropdown-item dropdown-toggle" tabindex="-1" href="#">New dropdown</a>
+    <ul class="dropdown-menu color2">
+        <li><a class="dropdown-item" tabindex="-1" href="template.php">2nd level item</a></li>
+        <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Another dropdown</a>
+            <ul class="dropdown-menu color3">
+                <li><a class="dropdown-item" href="template.php">3rd level item</a></li>
+                <li><a class="dropdown-item" href="template.php">3rd level item</a></li>
+            </ul>
+        </li>
+        <li><a class="dropdown-item" tabindex="-1" href="template.php">2nd level item</a></li>
+    </ul>
+</li>

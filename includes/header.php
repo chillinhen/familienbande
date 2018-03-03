@@ -1,32 +1,24 @@
-<header>
-    <div id="top-nav" class="fixedsticky">
-        <nav class="navbar navbar-light navbar-expand-md">
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="de" dir="ltr"
+      xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml"
+      id="ls-global" lang="de-DE">
+    <head>
+        <!-- Required meta tags -->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                    <!-- Bootstrap CSS -->
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Muli:400,400i,600,600i,700,700i" rel="stylesheet">
+                            <link rel="stylesheet" href="fonts/font.css">
+                                <!-- fontawesome -->
+                                <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-            <div class="container-fluid align-items-stretch">
-                <a class="navbar-brand bg-image" href="#"><span>familienbande24.de</span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between align-items-stretch" id="navbarSupportedContent">
-                    <?php include('menu.php'); ?>
-                    <button class="btn btn-outline-success align-self-center" type="button" data-toggle="modal" data-target="#modalSearchDialog"><i class="fas fa-search"></i><span>Suche</span></button>
-                </div>
-            </div>
-        </nav>
-
-    </div>
-    <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 text-center ads d-none d-lg-block d-xl-none">
-                    <img class="leaderboard" src="https://dummyimage.com/970x90/eee/00ffd5.png." alt="Dummy Leaderboard">
-                </div>
-            </div>
-            <div class="row align-items-end">
-                <div class="claim col-sm-12 col-lg-4 offset-lg-2">
-                <h1>Familienbande24</h1>
-                <h2 class="subline">alles zu Vornamen, Schwangerschaft, Geburt und Kinder</h2>
-                <p><strong>Auf unseren Seiten findest du viele Infos und praktische Helferlein rund um die Themen Schwangerschaft, Geburt, Kinder und Familie.</strong></p>
-            </div>
-            </div>
-        </div>
-</header>
+                                <link rel="stylesheet" href="css/screen.css" media="all">
+                                    <title>Familienbande24 - alles zu Vornamen, Schwangerschaft, Geburt und Kinder</title>
+                                    </head>
+                                    
+                                        
+                                            

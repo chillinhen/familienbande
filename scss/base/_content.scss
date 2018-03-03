@@ -1,46 +1,39 @@
-h2{
-
-    .text-center &{
-        display:inline-block;
-    }
-    main &:not(.card-title):after{
-        content:'';
-        height:.3rem;
-        margin-top:1em;
-        width:50%;
-        display: block;
-        @include multiple-border;
-    } 
-    .text-center &:after{
-        height:.6rem;
-        width:50%;
-        margin:1em auto 0;
-    } 
-}
-
-
 .cta{
- .card{background:$yellow;}
-*{color:white;}
+    .card{background:$yellow;}
+    *{color:white;}
 }
 
-    .tab-content{
-        margin-top:8px;
-        background:$yellow;
-        padding: 2em;
-        @include shadow;
+.tab-content{
+    padding: 1.6em;
+    @include shadow;
+    .sidebar &{
+        @include border-bottom-radius(2em);
     }
-    .nav-tabs{
+    .cat-blue &{background:$blue;}
+    .cat-yellow & {background:$yellow;}
+    .cat-pink &{background:$pink;}
+    .cat-green &{background:$green;}
+    * {
+        color:white;
+    }
+}
+.nav-tabs{
+    border:0;
+    .nav-link{
         border:0;
-        .nav-link{
-            background:lighten($yellow,10%);
-            border:0;
-        }
-        .nav-item.show .nav-link, .nav-link.active{
-            background:$yellow;
-            color:white;
-        }
+        .cat-blue &{background:lighten($blue,10%);}
+        .cat-yellow &{background:lighten($yellow,10%);}
+        .cat-pink &{background:lighten($pink,10%);}
+        .cat-green &{background:lighten($green,10%);}
     }
+    .nav-item.show .nav-link, .nav-link.active{
+        color:white;
+        .cat-blue &{background:$blue;}
+        .cat-yellow &{background:$yellow;}
+        .cat-pink &{background:$pink;}
+        .cat-green &{background:$green;}
+    }
+}
 /*** Content ***/
 .list-group-item{
     border-width: 0 0 1px 0;
@@ -50,14 +43,14 @@ h2{
     background: transparent;
     &:last-child{border:0;}
 }
-.list-group-item-action:hover, list-group-item-action:focus{
-    footer &{
-        color:white;
-        background: darken($blue,10%);
-    }
+.list-group-item-action{
+    color:white;
 }
-.card-body{
-    padding:2em 2.4em;
+.list-group-item-action:hover, .list-group-item-action:focus{
+    footer &{
+        background: darken($green,10%);
+        color:lighten($green, 50%);
+    }
 }
 
 .icon{
@@ -71,15 +64,115 @@ h2{
         display:block;
     }
 }
-.topics{
-    margin-top:-2em;
+#topicsBlock{
+    margin-top:4em;
     @include border-left-radius(2em);
     @include border-right-radius(2em);
     overflow:hidden;
     [class*="col-"]{padding:1em;}
     *{color:white;}
-    .cat-yellow {background: $blue;}
+    .cat-blue {background: $blue;}
     .cat-yellow {background: $yellow;}
     .cat-pink {background: $pink;}
     .cat-green {background: $green;}
+}
+.social-media-links{
+    color:white; 
+    ul{
+        margin:0 0 0 -2.5em;
+        @include display(flex);
+        @include flex-direction(row);
+        li{
+            text-align:center;
+            line-height:0;
+            width:3em;
+            padding:.5em;
+            a{
+                font-size:2em;
+                &:hover, &:focus{
+                    text-decoration: none;
+                    outline: none
+                }
+
+                span {
+                    display: block;
+                    text-indent: -99999px;
+                }
+            }
+        }
+    }
+}
+.card{
+            @include border-top-radius(2em);
+        @include border-bottom-radius(2em);
+        overflow:hidden;
+    .card-body{
+        position:relative;
+        padding:2em 2.4em;
+
+        .card-img-top{
+            overflow:hidden;
+
+        }
+        .badge-box + .card-title{margin-top:1em;}
+    }
+    .card-zoom{
+        overflow:hidden;
+        height:230px;
+        &:hover{
+            cursor:pointer;
+        }
+    }
+    .card-img-overlay{
+        @include gradient-overlay;
+    }
+}
+.badge-box{
+    position:absolute;
+    top: calc(-1em - 40px);
+    @include size(80px);
+    display:block;
+    @include border-radius(50%);
+    @include shadow;
+    span {
+        display:none;
+    }
+    &:after{
+        @include icon-style ("f073", 0, 1, 0, 3em);
+        @include display(flex);
+        @include justify-content(center);
+        @include align-items(center);
+        @include size(100%);
+        color:white;
+    }
+    .cat-blue &{
+        background:$blue;
+        &:after{content:"\f073";}
+    }
+    .cat-pink &{
+        background:$pink;
+        &:after{content:"\f05a";}
+    }
+    .cat-yellow &{
+        background:$yellow;
+        &:after{content:"\f007";}
+    }
+    .cat-green &{
+        background:$green;
+        &:after{content:"\f075";}
+    }
+
+}
+.modal-dialog{
+    margin:15vH auto;
+}
+.modal-body{
+    padding:2em;
+}
+.modal-header{
+    .has-image &{
+        padding:0;
+        height: 230px;
+        overflow: hidden;
+    }
 }

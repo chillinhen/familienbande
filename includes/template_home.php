@@ -1,21 +1,15 @@
-<?php include('includes/header.php'); ?>
 <main class="container-fluid">
     <section class="featured">
         <!-- Themen -->
-       <div class="row topics">
-            <div class="col-md-3 cat-yellow"><?php include('includes/block-event.php'); ?></div>
-            <div class="col-md-3 cat-yellow"><?php include('includes/block-name.php'); ?></div>
-            <div class="col-md-3 cat-pink"><?php include('includes/block-knowledge.php'); ?></div>
-            <div class="col-md-3 cat-green"><?php include('includes/block-slogans.php'); ?></div>
-        </div>
-                <div class="row">
+        <?php include('includes/topics-multicolored.php');?>
+
+        <div class="row">
             <div class="col-md-12 text-center">
                 <h2>Die neuesten Artikel</h2>
             </div>
-            <div class="col-md-3 cat-yellow"><?php include('includes/card.php'); ?></div>
-            <div class="col-md-3 cat-pink"><?php include('includes/card.php'); ?></div>
-            <div class="col-md-3 cat-yellow"><?php include('includes/card.php'); ?></div>
-            <div class="col-md-3 cat-green"><?php include('includes/card.php'); ?></div>
+            <div class="col-md-4 cat-yellow mb-5"><?php include('includes/card.php'); ?></div>
+            <div class="col-md-4 cat-pink mb-5"><?php include('includes/card.php'); ?></div>
+            <div class="col-md-4 cat-green"><?php include('includes/card.php'); ?></div>
         </div>
         <div class="row ads d-none d-sm-block">
             <div class="col-md-12 text-center">
@@ -47,4 +41,3 @@
 </main>
 
 <?php include('includes/footer.php'); ?>
-<?php include('includes/modal-search-dialog.php'); ?>

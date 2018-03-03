@@ -1,4 +1,4 @@
-<header>
+<header class="home">
     <div id="top-nav" class="fixedsticky">
         <nav class="navbar navbar-light navbar-expand-md">
 

@@ -3,9 +3,13 @@
    ========================================================================== */
 $foo:red;
 $blue:#159EE5;
+$darkerBlue:darken($blue,25%);
 $yellow:#FF9A34;
+$darkerYellow:darken($yellow,25%);
 $pink:#FF77A5;
+$darkerPink:darken($pink,25%);
 $green:#00B470;
+$darkerGreen:darken($green,25%);
 
 $brand-primary:$blue;
 $brand-secondary: $pink;

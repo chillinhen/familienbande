@@ -1,32 +1,11 @@
-.card-img-top{
-    overflow:hidden;
-    @media screen and (max-width:$screen-sm - 1){
-        .featured &,.content & {
-            height:200px;
-        }
-    }
-    @media screen and (min-width:$screen-sm){
-        .featured & {
-            height:230px;
-        }
-        .content & {
-            height:450px;
-        }
-    }
-
-}
-.card-zoom{
-    img {}
-    &:hover{
-        cursor:pointer;
-        img {
-           @include size(110%);
-           @include transition(all 200ms ease-out);
-        }
-    }
-}
 .ads{
     margin:2em 0;
+    &.leaderboard-container{
+      @include category-backgrounds;
+      padding:2em 0;
+      margin-top:0;
+    }
+   
     &:hover{
         cursor:pointer;
     }

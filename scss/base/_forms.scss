@@ -17,7 +17,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"]{
     margin:0 .5em;
-    @include button-style (3px, 1em, 1em);
+    @include button-style (2em, 1em, 1em);
     background:$brand-primary;
     color:$white;
 }
@@ -29,17 +29,17 @@ input[type="number"],
 input[type="tel"],
 textarea,
 select { 
-    background-color: $body-bg;
+    background-color: $body-bg !important;
     @include border-radius(0);
     border:1px solid $border-color;
     padding: 2% 5%; 
-    @media screen and (max-width:$screen-xs){
+/*    @media screen and (max-width:$screen-xs){
         width:100%;
     }
     @media screen and (min-device-width:$screen-sm + 1) and (orientation:portrait){
-        width: 90%;/*_NO__DOTCOMMA__AFTER__ */
+        width: 90%;_NO__DOTCOMMA__AFTER__ 
 
-    }
+    }*/
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -54,7 +54,7 @@ select {
     background-image:url('../img/bg-select.png');
     background-position: 98% 50%;
     background-repeat: no-repeat; 
-    width:100%; 
+/*    width:100%; */
     }
 
 }
@@ -66,6 +66,12 @@ textarea {
 label{
     font-weight:400;
     display:block;
+    .form-group &{
+        width:2em;
+        span{
+            @include text-indent;
+        } 
+    }
 }
 
 .form-inline{
@@ -77,4 +83,7 @@ label{
     @media screen and (max-width:$screen-sm - 1){
         width:80%;
     }
+}
+.input-group{
+    margin:1em 0; 
 }
