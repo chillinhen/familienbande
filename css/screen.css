@@ -267,7 +267,7 @@ body {
     body > header .hero {
       background: transparent url(../img/look.jpg) no-repeat 100% 70%;
       background-size: cover; }
-      body > header .hero:before, body > header .hero:after {
+      body > header .hero:after {
         content: '';
         height: .3rem;
         display: block;
@@ -323,6 +323,29 @@ body {
   max-width: 1170px;
   margin: 0 auto; }
 
+.parallax {
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed; }
+  .parallax.cat-event {
+    background-image: url(../img/myles-tan-84040.jpg);
+    background-position: top left;
+    margin: 2em 0 0 0; }
+  .parallax.cat-names {
+    background-image: url(../img/look.jpg);
+    background-position: center center;
+    margin: 0 0 2em 0; }
+  .parallax [class*="col-"] {
+    padding: 100px 0; }
+  .parallax:before, .parallax:after {
+    content: '';
+    height: .3rem;
+    display: block;
+    background: linear-gradient(to right, #159EE5 0%, #159EE5 25%, #FF9A34 25%, #FF9A34 50%, #FF77A5 50%, #FF77A5 75%, #00B470 75%, #00B470 100%); }
+  .parallax * {
+    color: white; }
+
 .navbar-brand {
   background: transparent url(../img/logo.png) no-repeat left center;
   background-size: 100% auto; }
@@ -365,6 +388,8 @@ body {
         padding-bottom: 1em; } }
   #top-nav .nav-item[class*="cat-"] > .nav-link {
     color: white !important; }
+  #top-nav .nav-item.cat-home {
+    background: #0c5e88; }
   #top-nav .nav-item.cat-blue {
     background: #159EE5; }
   #top-nav .nav-item.cat-yellow {
@@ -393,24 +418,17 @@ body {
       -ms-flex-align: center; } }
 
 #top-nav {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
   -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
   #top-nav .navbar-light {
-    background: white;
+    background: #00a5fa;
     -webkit-transition: all 200ms ease-out;
     -moz-transition: all 200ms ease-out;
     transition: all 200ms ease-out;
     -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
-  #top-nav + div {
-    padding-top: 75px; }
 
 .dropdown-menu {
   font-size: 1em;
@@ -906,27 +924,10 @@ label {
 /*
 @import 'modules/_widgets';
 @import 'modules/_posts';*/
-.parallax {
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: cover;
-  background-attachment: fixed; }
-  .parallax.cat-event {
-    background-image: url(../img/myles-tan-84040.jpg);
-    background-position: top left;
-    margin: 2em 0 0 0; }
-  .parallax.cat-names {
-    background-image: url(../img/look.jpg);
-    background-position: center center;
-    margin: 0 0 2em 0; }
-  .parallax [class*="col-"] {
-    padding: 100px 0; }
-  .parallax:before, .parallax:after {
-    content: '';
-    height: .3rem;
-    display: block;
-    background: linear-gradient(to right, #159EE5 0%, #159EE5 25%, #FF9A34 25%, #FF9A34 50%, #FF77A5 50%, #FF77A5 75%, #00B470 75%, #00B470 100%); }
-  .parallax * {
-    color: white; }
+#top-bar {
+  padding: 2em 1em; }
+
+.home.nav-item {
+  background: transparent url(../img/small-white-logo.png) no-repeat top center/contain; }
 
 /*# sourceMappingURL=screen.css.map */

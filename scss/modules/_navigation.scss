@@ -46,6 +46,9 @@
         &[class*="cat-"] > .nav-link{
             color:white !important;
         }
+        &.cat-home{
+           background:darken( $blue, 20% );
+        }
         &.cat-blue{
             background:$blue;
         }
@@ -66,19 +69,11 @@
 
 }
 #top-nav{
-    position:fixed !important;
-    top:0;
-    left:0;
-    right:0;
-    z-index:9999;
     @include shadow;
     .navbar-light{
-        background:white;
+        background:saturate( $blue, 20% );
         @include transition(all 200ms ease-out);
         @include shadow;
-    }
-    + div {
-        padding-top:75px;
     }
 }
 .dropdown-menu{

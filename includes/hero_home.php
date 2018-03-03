@@ -1,13 +1,7 @@
 <body id="home">
     <header class="home">
         <?php include('includes/top-nav.php'); ?>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 text-center ads d-none d-lg-block">
-                    <img class="leaderboard" src="https://dummyimage.com/970x90/eee/00ffd5.png." alt="Dummy Leaderboard">
-                </div>
-            </div>
-        </div>
+        
         <div class="hero">
             <div class="container-fluid">
                 <div class="row">

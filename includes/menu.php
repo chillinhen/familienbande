@@ -1,4 +1,7 @@
 <ul class="navbar-nav">
+    <li class="nav-item cat-home dropdown home">
+        <a class="nav-link" href="index.php">Home</a>
+    </li>
     <li class="nav-item cat-blue dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownEvents" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wohin?</a>
         <ul class="dropdown-menu">
