@@ -5,3 +5,26 @@
         @include transition(all 400ms ease-out);
     }
 }
+.pagination {
+    border:0;
+    font-size:large;
+    @include category-color;
+}
+.nav-tabs{
+    
+}
+table{
+    &.table{
+        @include category-backgrounds;
+        
+        thead,
+        tr:nth-child(even){
+            @include alpha-background-color(rgba($darkerPink, 0.35), white);
+        }
+        th, td{
+            border-width:0 0 1px 0;
+            border-style:solid;
+            border-color:currentColor;
+        }
+    }
+}

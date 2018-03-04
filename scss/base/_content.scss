@@ -19,6 +19,8 @@
 }
 .nav-tabs{
     border:0;
+    font-size:1.2em;
+    color:white;
     .nav-link{
         border:0;
         .cat-blue &{background:lighten($blue,10%);}
@@ -175,9 +177,10 @@
         overflow: hidden;
     }
 }
-.largeSearch{
-    @include shadow;
-    margin:-4em 0 4em;
+.largeDoubleSearch,
+.largeSimpleSearch{
+        @include shadow;
+    * {color:white;}
     .card-body {
         @include category-backgrounds;
         >  *{
@@ -185,18 +188,28 @@
     }
     }
     form{
-        @include flex-basis(75%);
-        
         label {
             font-weight:bold;
             color:white;
         }
-        
         input{
             margin:0 1em 0 .5em;
             @include border-top-radius(1em);
             @include border-bottom-radius(1em);
         }
+    }
+}
+.largeDoubleSearch{
+    form{
+        .form-group{
+            @include flex-basis(40%);
+        }
+    }
+}
+
+.largeSimpleSearch{
+    form{
+        @include flex-basis(75%); 
     }
     .note{
         h4 a{

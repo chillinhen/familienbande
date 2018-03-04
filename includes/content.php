@@ -1,13 +1,6 @@
 <?php include('includes/header.php'); ?>
     <main class="main-content">
         <div class="container-fluid">
-            <div class="row align-items-end">
-                <div class="col-sm-10 offset-md-1">
-                    <?php include('includes/large-name-search.php');?>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 sidebar order-lg-2">
                     <aside id="infoblock" class="fixedsticky">

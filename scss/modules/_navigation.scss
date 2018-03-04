@@ -73,22 +73,23 @@
         opacity:0;
         @include transition(all 120ms ease-in-out);
     }
-    #top-nav.js-is-sticky &.home .nav-link{
+    #top-nav[class*="js-is-st"] &.home .nav-link{
         background: transparent url(../img/small-white-logo-only.png) no-repeat center center / 75% auto;
             width: 115px;
             height: 75px;
             padding: 2em;
             @include transition(all 120ms ease-in-out);
     }
-    #top-nav.js-is-sticky &.search .nav-link{
+    #top-nav[class*="js-is-st"] &.search .nav-link{
          opacity:1;
         @include transition(all 120ms ease-in-out);
     }
 
 }
 #top-nav{
-    &.js-is-sticky{
-                position:fixed;
+    &.js-is-sticky,
+    &.js-is-stuck{
+        position:fixed;
         top:0;
         left:0;
         right:0;

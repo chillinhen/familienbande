@@ -11,10 +11,10 @@
 
 .top-border{
     &:before{
-            content:'';
-    height:.5em;
-    display: block;
-       @include multiple-border; 
+        content:'';
+        height:.5em;
+        display: block;
+        @include multiple-border; 
     } 
 }
 .navbar-light{
@@ -27,18 +27,15 @@
     @media screen and (min-width:$screen-sm){
         background-color: rgba(255,255,255,.75);
     }
-    
+
 }
 .btn{
     &:hover, &:focus {
         color:#fff;
     }
-            .cat-blue &{background:$blue;}
-        .cat-yellow &{background:$yellow;}
-        .cat-pink &{background:$pink;}
-        .cat-green &{background:$green;}
+    @include category-backgrounds;
     &.btn-inverse{
-        background-color: $bg-inverse;
+        background-color: $bg-inverse !important;
         color: $white;
         background-image: none;
         background-repeat: repeat-x;
@@ -50,6 +47,11 @@
             color:#fff;
         }
     }
+    &.btn-secondary{background-color: $brand-secondary !important;}
+    &.btn-success{background-color: $brand-success !important;}
+    &.btn-danger{background-color: $brand-danger !important;}
+    &.btn-warning{background-color: $brand-warning !important;}
+    &.btn-info{background-color: $brand-info !important;}
     &.btn-small {
         @include button-style (3px,5px 10px, 0.850em );
     }
@@ -63,28 +65,28 @@
     .card &{
         margin:0 -.5em !important;
     }
-        .cat-yellow & {
+    .cat-yellow & {
         background: $blue;
         &:hover{
-           background: darken($blue,30%); 
+            background: darken($blue,30%); 
         }
     }
     .cat-yellow & {
         background: $yellow;
         &:hover{
-           background: darken($yellow,30%); 
+            background: darken($yellow,30%); 
         }
     }
     .cat-pink & {
         background: $pink;
         &:hover{
-           background: darken($pink,30%); 
+            background: darken($pink,30%); 
         }
     }
     .cat-green & {
         background: $green;
         &:hover{
-           background: darken($green,30%); 
+            background: darken($green,30%); 
         }
     }
     [class*="cat-"] & {

@@ -19,12 +19,18 @@ body{
     body#home &, body#names &{
         background:transparent url(../img/look.jpg) no-repeat 100% 60% / cover;
     }
+    body#events &{
+        background:transparent url(../img/myles-tan-84040.jpg) no-repeat 100% 50% / cover;
+    }
 
-    body#home & .row,
-    body#names &{
+    & .row{
         min-height: 50vH;
         padding-bottom: 5vH;
     }
+    & .row{
+        margin-bottom: -10vH;
+    }
+    
 
     .claim , .claim *{
         color:white;
@@ -40,6 +46,12 @@ body{
         display: block;
         @include multiple-border;
         margin-bottom:2em;
+    }
+}
+main.main-content{
+    margin-top:2em;
+    .hero + &{
+        margin-top:10vH;
     }
 }
 #footer {
@@ -82,12 +94,12 @@ body{
     background-size:cover;
     background-attachment: fixed;
 
-    &.cat-event{
-        background-image:url(../img/myles-tan-84040.jpg);
+    body[class*="cat"] &{
+        background-image:url(../img/patrick-fore-358120-unsplash.jpg);
         background-position:top left;
         margin:2em 0 0 0;
     }
-    &.cat-names{
+    &.cat-yellow &{
         background-image:url(../img/look.jpg);
         background-position:center center;
         margin:0 0 2em 0;
@@ -102,5 +114,6 @@ body{
     }
     * {
         color:white;
+        font-weight:bold;
     }
 }

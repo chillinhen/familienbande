@@ -1,4 +1,4 @@
-<body id="home">
+<body id="home" class="has-hero">
     <header id="header">
         <div id="top-bar">
             <div class="row justify-content-center">

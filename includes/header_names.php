@@ -1,4 +1,4 @@
-<body id="knowledge" class="cat-blue">
+<body id="names" class="cat-yellow has-hero">
     <header id="header">
         <div id="top-bar">
             <div class="row justify-content-center">
@@ -12,3 +12,12 @@
         </div>
     </header>
     <?php include('includes/top-nav.php'); ?>
+    <div class="hero">
+        <div class="container-fluid">
+            <div class="row align-items-end">
+                <div class="col-sm-10 offset-md-1">
+                    <?php include('includes/form-large-simple-search.php');?>
+                </div>
+            </div>
+        </div>
+    </div>

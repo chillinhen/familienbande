@@ -4,13 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="familienbande24"/>
         <group name="familienbande">
-            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/includes/hero_home.php</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/scss/utils/_mixins.scss</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/includes/content-dummy.php</file>
             <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/scss/base/_layout.scss</file>
-            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/scss/modules/_navigation.scss</file>
-            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/js/customize.js</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/includes/header.php</file>
             <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/scss/_shame.scss</file>
-            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/includes/menu.php</file>
-            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/includes/top-nav.php</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/scss/base/_content.scss</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/template.php</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/includes/row-large-tabs.php</file>
+            <file>file:/Users/chilliscope/Documents/Webseiten/familienbande/scss/utils/_variables.scss</file>
         </group>
     </open-files>
 </project-private>

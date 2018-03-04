@@ -24,7 +24,7 @@ a {
     &,&:link { 
         text-decoration: none;
         cursor:pointer;
-        color:inherit;
+        color:inherit !important;
     }
 
     &:visited{
@@ -43,6 +43,11 @@ h1,h2,h3,h4, legend{
     font-family:$headings-font-family;
     text-transform: uppercase;
     font-weight:600;
+    margin-top:1em;
+    & + *{
+        margin-top:1em;
+    }
+    &:first-child{margin-top:0;}
     a{
         text-decoration: none;
         color: inherit;
@@ -51,10 +56,14 @@ h1,h2,h3,h4, legend{
         text-transform:none;
         font-size:1.4em;
     }
+    
 }
 h2, legend {
     main &{
         font-size: 2.5rem;
+        
+    }
+    #home main &{
         margin-bottom: 2em;
     }
     .text-center &{
@@ -78,14 +87,20 @@ h2, legend {
         margin-top:2em;
     }
 }
-legend:after{
-           content:'';
+legend{
+    .largeDoubleSearch &,
+    .largeSimpleSearch &{
+        margin-bottom:1em;
+    }
+    .modal-content &:after{
+        content:'';
         height:.3rem;
         margin-top:1em;
         width:50%;
         display: inline-block;
         @include multiple-border;
         text-align:center;
+    }
 }
 h3 {
     main &{
@@ -125,4 +140,10 @@ h6 {
 
 p, span{
     color:inherit;
+}
+.lead{
+    font-size:1.2em;
+}
+i[class*="fa"]{
+  color:inherit;  
 }
