@@ -1,5 +1,5 @@
 <ul class="navbar-nav">
-    <li class="nav-item cat-home dropdown home">
+    <li class="nav-item home">
         <a class="nav-link" href="index.php">Home</a>
     </li>
     <li class="nav-item cat-blue dropdown">
@@ -25,5 +25,8 @@
     <li class="nav-item cat-green dropdown ">
         <a class="nav-link dropdown-toggle" id="navbarDropdownSlogans" href="template.php" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sprüche</a>
         <ul class="dropdown-menu"><?php include('dropdown-menu.php'); ?></ul>
+    </li>
+    <li class="nav-item search">
+        <a class="nav-link" data-toggle="modal" data-target="#modalSearchDialog">Suche <i class="fas fa-search"></i></a>
     </li>
 </ul>

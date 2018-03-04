@@ -1,5 +1,5 @@
 <?php 
-    include('includes/header.php');
-    include('includes/hero_home.php');
+    include('template/head.php');
+    include('includes/header_home.php');
     include('includes/template_home.php'); 
 ?>

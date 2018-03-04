@@ -4,13 +4,13 @@
     <p>Dein persönlicher Login: Bitte trage hier die Zugangsdaten ein, die du nach der Anmeldung von uns per Mail zugeschickt bekommen hast:</p>
     <div class="form-group">
         <div class="input-group">
-            <label for="username">
+            <label for="username" class="has-icons">
                 <i class="fas fa-user"></i><span>Dein Nickname</span>
             </label>
             <input type="text" class="form-control" id="username" required placeholder="Dein Nickname">
         </div>
                 <div class="input-group">
-            <label for="password">
+            <label for="password" class="has-icons">
                 <i class="fas fa-lock"></i><span>Dein Password</span>
             </label>
             <input type="password" class="form-control" required id="password" placeholder="Dein Password">

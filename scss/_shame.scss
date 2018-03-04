@@ -1,8 +1,7 @@
-#top-bar{
-    padding:2em 1em;
-}
-.home{
-    &.nav-item{
-        background: transparent url(../img/small-white-logo.png) no-repeat top center / contain;
+#infoblock{
+    &.js-is-sticky,
+    &.js-is-stuck{
+        top:100px !important;
+        @include transition(all 400ms ease-out);
     }
 }

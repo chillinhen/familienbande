@@ -28,10 +28,7 @@
     }
     .nav-item.show .nav-link, .nav-link.active{
         color:white;
-        .cat-blue &{background:$blue;}
-        .cat-yellow &{background:$yellow;}
-        .cat-pink &{background:$pink;}
-        .cat-green &{background:$green;}
+        @include category-backgrounds
     }
 }
 /*** Content ***/
@@ -103,9 +100,11 @@
     }
 }
 .card{
-            @include border-top-radius(2em);
+    @include border-top-radius(2em);
         @include border-bottom-radius(2em);
-        overflow:hidden;
+    &:not(.bubble){
+                overflow:hidden;
+    }
     .card-body{
         position:relative;
         padding:2em 2.4em;
@@ -174,5 +173,49 @@
         padding:0;
         height: 230px;
         overflow: hidden;
+    }
+}
+.largeSearch{
+    @include shadow;
+    margin:-4em 0 4em;
+    .card-body {
+        @include category-backgrounds;
+        >  *{
+        padding:0em 1.5em;
+    }
+    }
+    form{
+        @include flex-basis(75%);
+        
+        label {
+            font-weight:bold;
+            color:white;
+        }
+        
+        input{
+            margin:0 1em 0 .5em;
+            @include border-top-radius(1em);
+            @include border-bottom-radius(1em);
+        }
+    }
+    .note{
+        h4 a{
+            color:white;
+            @include display(flex);
+            @include justify-content(space-around);
+            &:before{
+                @include icon-style ("\f249", .5em, 1, 0, 2em);
+            }
+            .label{
+                    display:block;
+                    background:$brand-primary;
+                    color:white;
+                    text-align:center;
+                    min-width:3em;
+                    padding:.5em;
+                    @include border-left-radius(1em);
+                    @include border-right-radius(1em);
+                }
+        }
     }
 }

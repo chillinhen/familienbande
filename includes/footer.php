@@ -1,4 +1,4 @@
-<footer class="">
+<footer id="footer">
     <section class="footer-links py-5">
         <div class="container-fluid">
             <div class="row align-items-md-end">

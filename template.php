@@ -1,5 +1,3 @@
 <?php 
-include('includes/header.php');
-include('includes/hero_template.php');
-include('includes/content-events.php'); 
-?>
+include('includes/head.php');
+include('includes/content-dummy.php');?>
