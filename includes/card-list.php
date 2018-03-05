@@ -2,11 +2,30 @@
     <div class="card-body">
         <h3>Die beliebtesten Artikel</h3>
         <ul class="list-group">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item d-flex justify-content-start align-items-center">
+    <span class="badge badge-multicolor badge-pill">1</span>
+    Cras justo odio  
+</li>
+<li class="list-group-item d-flex justify-content-start align-items-center">
+    <span class="badge badge-multicolor badge-pill">2</span>
+    Dapibus ac facilisis in   
+</li>
+<li class="list-group-item d-flex justify-content-start align-items-center">
+    <span class="badge badge-multicolor badge-pill">3</span>
+    Morbi leo risus
+</li>
+<li class="list-group-item d-flex justify-content-start align-items-center">
+    <span class="badge badge-multicolor badge-pill">4</span>
+    Cras justo odio  
+</li>
+<li class="list-group-item d-flex justify-content-start align-items-center">
+    <span class="badge badge-multicolor badge-pill">5</span>
+    Dapibus ac facilisis in   
+</li>
+<li class="list-group-item d-flex justify-content-start align-items-center">
+    <span class="badge badge-multicolor badge-pill">6</span>
+    Morbi leo risus
+</li>
         </ul>
     </div>
 </div>

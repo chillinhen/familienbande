@@ -105,3 +105,48 @@ box-shadow: 5px 5px 0 0 $color;
     .cat-pink &{color:$pink;}
     .cat-green &{color:$green;}
 }
+@mixin alternate-colors{
+    li:nth-child(4n+1) &{
+        background:$blue;
+    }
+    li:nth-child(4n+2) &{
+        background:$yellow;
+    }
+    li:nth-child(4n+3) &{
+        background:$pink;
+    }
+    li:nth-child(4n+4) &{
+        background:$green;
+    }
+}
+@mixin square-caption-overlay($size){
+        figure{
+        position:relative;
+        @include size($size);
+        overflow:hidden;
+        > figcaption{
+           position:absolute; 
+           top:-$size;
+           font-size:larger;
+                       padding:1vW;
+            font-weight:bold;
+            text-align:center;
+           @include display(flex);
+           @include flex-direction(row);
+           @include justify-content(center);
+           @include align-items(center);
+        }
+        &:hover, &:focus {
+            cursor:pointer;
+            > figcaption{
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            color:white;
+            background:rgba(0,0,0,.7);
+            @include transition(top 200ms ease-out);
+        }
+        }
+    }
+}

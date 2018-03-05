@@ -11,7 +11,9 @@
                 <?php include('includes/row-text.php'); ?>
                 <?php include('includes/row-article-grid.php'); ?>
                 <?php include('includes/row-google-ads.php'); ?> 
-                <?php include('includes/row-large-tabs.php'); ?> 
+                <?php include('includes/row-large-tabs.php'); ?>
+                <?php include('includes/tag-cloud.php');?>
+                <?php include('includes/small-img-grid.php');?>
             </div>
         </div>
     </div>

@@ -88,6 +88,13 @@ main.main-content{
     max-width: 1170px;
     margin:0 auto;
 }
+#infoblock{
+    &.js-is-sticky,
+    &.js-is-stuck{
+        top:100px !important;
+        @include transition(all 400ms ease-out);
+    }
+}
 .parallax{
     background-repeat:no-repeat;
     background-color:transparent;

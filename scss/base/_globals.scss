@@ -140,5 +140,61 @@ a.btn-primary{
         left: 150px;
     }
 }
+.badge{
+    &.badge-default{
+        background:white;
+        @include category-color;
+        
+    }
+    &.badge-primary{
+       background:$brand-primary; 
+    }
+    &.badge-secondary{
+       background:$brand-secondary; 
+    }
+    &.badge-success{
+       background:$brand-success; 
+    }
+    &.badge-info{
+       background:$brand-info; 
+       color:darken($brand-info,70%);
+    }
+    &.badge-warning{
+       background:$brand-warning; 
+    }
+    &.badge-danger{
+       background:$brand-danger; 
+    }
+    &.badge-multicolor{
+       color:white;
+       @include alternate-colors;
+    }
+    .justify-content-start &{
+        margin:0 .5em;
+    }
+}
+table{
+    &.table{
+        @include category-backgrounds;
+        
+        tbody tr:nth-child(odd){
+            @include alpha-background-color(rgba(black, 0.25), white);
+        }
+                thead{
+         font-weight:bold;
+         background:transparent;
+        }
+        th, td{
+            border-width:0 0 1px 0;
+            border-style:solid;
+            border-color:currentColor;
+        }
+    }
+}
+.pagination {
+    border:0;
+    font-size:large;
+    @include category-color;
+}
 
 
