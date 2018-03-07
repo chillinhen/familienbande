@@ -29,12 +29,12 @@
                     <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 my-5"><?php include('includes/card.php'); ?></div>
-                    <div class="col-sm-6 my-5"><?php include('includes/card.php'); ?></div>
+                    <div class="col-sm-6 my-5"><?php include('includes/card_with-thumbnail.php'); ?></div>
+                    <div class="col-sm-6 my-5"><?php include('includes/card_with-thumbnail.php'); ?></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 my-5"><?php include('includes/card.php'); ?></div>
-                    <div class="col-sm-6 my-5"><?php include('includes/card.php'); ?></div>
+                    <div class="col-sm-6 my-5"><?php include('includes/card_with-thumbnail.php'); ?></div>
+                    <div class="col-sm-6 my-5"><?php include('includes/card_with-thumbnail.php'); ?></div>
                 </div>
                 <div class ="row">
                     <div class="ads d-none d-sm-block">

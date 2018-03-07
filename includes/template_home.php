@@ -7,9 +7,9 @@
             <div class="col-md-12 text-center">
                 <h2>Die neuesten Artikel</h2>
             </div>
-            <div class="col-md-4 cat-yellow mb-5"><?php include('includes/card.php'); ?></div>
-            <div class="col-md-4 cat-pink mb-5"><?php include('includes/card.php'); ?></div>
-            <div class="col-md-4 cat-green"><?php include('includes/card.php'); ?></div>
+            <div class="col-md-4 cat-yellow mb-5"><?php include('includes/card_with-thumbnail.php'); ?></div>
+            <div class="col-md-4 cat-pink mb-5"><?php include('includes/card_with-thumbnail.php'); ?></div>
+            <div class="col-md-4 cat-green"><?php include('includes/card_with-thumbnail.php'); ?></div>
         </div>
         <div class="row ads d-none d-sm-block">
             <div class="col-md-12 text-center">
@@ -24,7 +24,7 @@
                 <h2>Lorem Ipsum sit dolor</h2>
             </div>
             <div class="col-md-8 content">
-                <?php include('includes/big-card.php'); ?>
+                <?php include('includes/big-card_with-thumbnail.php'); ?>
                 <div class="ads d-none d-sm-block">
                     <img class="img-fluid" src="img/google-ads.jpg" alt=""/>
                 </div>

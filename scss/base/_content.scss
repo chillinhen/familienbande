@@ -35,23 +35,58 @@
         @include category-backgrounds;
 
     }
-    .nav-item.show .nav-link, .nav-link.active{
-        color:white;
-                .cat-blue &{background:lighten($blue,5%);}
-        .cat-yellow &{background:lighten($yellow,5%);}
-        .cat-pink &{background:lighten($pink,5%);}
-        .cat-green &{background:lighten($green,5%);}
-        
+    .nav-item{
+        margin-right:1px;
+        &.show .nav-link, nav-link.active{
+            color:white;
+            .cat-blue &{background:lighten($blue,5%);}
+            .cat-yellow &{background:lighten($yellow,5%);}
+            .cat-pink &{background:lighten($pink,5%);}
+            .cat-green &{background:lighten($green,5%);} 
+        }
+        &:first-child{
+            -webkit-border-radius: 15px 0 0 0;
+            border-radius: 15px 0 0 0;
+            overflow:hidden;
+        }
+        &:last-child{
+            -webkit-border-radius: 0 15px 0 0 ;
+            border-radius: 0 15px 0 0;
+            overflow:hidden;
+        }
     }
+    
 }
 /*** Content ***/
 .list-group-item{
+    list-style:none !important;
     border-width: 0 0 1px 0;
     margin: 0;
     padding: 1em .5em;
     border-color: currentColor;
     background: transparent;
+    &.show-more{
+        color:$brand-primary;
+        text-align:right;
+        border:0;
+        
+        a[aria-expanded="false"]:after{
+            @include icon-style ("\f055", 0, 1, .5em, 1em);
+        }
+        a[aria-expanded="true"]:after{
+            @include icon-style ("\f056", 0, 1, .5em, 1em);
+        }
+    }
+    &.justify-content-start > *{
+        margin:0 1em 0 0;
+    }
     &:last-child{border:0;}
+    
+    [class*="fa"]{
+    font-size:larger;
+    @include category-color;
+}
+    
 }
 .list-group-item-action{
     color:white;
@@ -64,7 +99,6 @@
 }
 
 .icon{
-
     padding: 0 2em .5em;
     font-size: 3em;
     color:white;
@@ -114,7 +148,7 @@
 }
 .card{
     @include border-top-radius(2em);
-        @include border-bottom-radius(2em);
+    @include border-bottom-radius(2em);
     &:not(.bubble){
                 overflow:hidden;
     }
@@ -137,6 +171,15 @@
     }
     .card-img-overlay{
         @include gradient-overlay;
+    }
+    &.featured-list{
+        h3{
+            @include category-backgrounds;
+            color: white;
+            margin-left: -2em;
+            padding: .5em 0 .5em 2.4em; 
+            @include border-right-radius(1em);
+        }
     }
 }
 .badge-box{

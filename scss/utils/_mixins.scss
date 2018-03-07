@@ -105,7 +105,7 @@ box-shadow: 5px 5px 0 0 $color;
     .cat-pink &{color:$pink;}
     .cat-green &{color:$green;}
 }
-@mixin alternate-colors{
+@mixin alternate-bg-colors{
     li:nth-child(4n+1) &{
         background:$blue;
     }
@@ -117,6 +117,21 @@ box-shadow: 5px 5px 0 0 $color;
     }
     li:nth-child(4n+4) &{
         background:$green;
+    }
+}
+@mixin alternate-color{
+    //number of alternating colors(n) + the position
+    li:nth-child(4n+1) &{
+        color:$blue;
+    }
+    li:nth-child(4n+2) &{
+        color:$yellow;
+    }
+    li:nth-child(4n+3) &{
+        color:$pink;
+    }
+    li:nth-child(4n+4) &{
+        color:$green;
     }
 }
 @mixin square-caption-overlay($size){

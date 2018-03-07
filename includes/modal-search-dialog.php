@@ -8,7 +8,7 @@
                 </button>
             </div>
             <div class="modal-body cat-pink">
-                <?php include('includes/card-advanced-search.php');?>
+                <?php include('includes/simple-search-two-tabs.php'); ?>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Schliessen</button>

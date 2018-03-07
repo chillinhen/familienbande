@@ -30,6 +30,7 @@
 
 }
 .btn{
+    &:not(.btn-info),
     &:hover, &:focus {
         color:#fff;
     }
@@ -144,7 +145,6 @@ a.btn-primary{
     &.badge-default{
         background:white;
         @include category-color;
-        
     }
     &.badge-primary{
        background:$brand-primary; 
@@ -167,10 +167,7 @@ a.btn-primary{
     }
     &.badge-multicolor{
        color:white;
-       @include alternate-colors;
-    }
-    .justify-content-start &{
-        margin:0 .5em;
+       @include alternate-bg-colors;
     }
 }
 table{
