@@ -1,4 +1,4 @@
-<body id="knowledge" class="cat-pink">
+<body id="knowledge" class="cat-green">
     <header id="header">
         <div id="top-bar">
             <div class="row justify-content-center">

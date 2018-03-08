@@ -24,6 +24,7 @@ input[type="submit"]{
 input[type="text"],
 input[type="date"],
 input[type="email"],
+input[type="search"],
 input[type="confirm_email"],
 input[type="number"],
 input[type="tel"],
@@ -32,7 +33,14 @@ select {
     background-color: $body-bg !important;
     @include border-radius(0);
     border:1px solid $border-color;
-    padding: 2% 5%; 
+    padding: .5em 1em;
+    height:3em;
+    font-size:1em;
+    
+    .form-group &{
+        margin:0 1em;
+        min-width:300px;
+    }
 /*    @media screen and (max-width:$screen-xs){
         width:100%;
     }
@@ -41,31 +49,79 @@ select {
 
     }*/
 }
+/*Checkbox*/
+input[type="checkbox"], input[type="radio"]{
+    position: absolute;
+    right: 9000px;
+    font-size:1.6em;
+    + .label-text:before{
+        @include icon-style (" ", .5em, 1, 0, 1.6em);
+        width: 1em;
+    }
+    &:checked + .label-text:before{
+        color: $brand-success;
+    }
+    &:disabled + .label-text{
+        color: $light-text-color;
+        &:before{
+            color: inherit;
+        }
+    }
+}
+/*Radio Buttons*/
+input[type="checkbox"]{
+    + .label-text:before{
+        content: "\f096";
+    }
+    &:checked + .label-text:before{
+        content: "\f14a";
+    }
+    &:disabled + .label-text:before{
+        content: "\f0c8";
+    }
+}
+input[type="radio"]{
+    + .label-text:before{
+        content: "\f10c";
+    }
+    &:checked + .label-text:before{
+        content: "\f192";
+    }
+    &:disabled + .label-text:before{
+        content: "\f111";
+    }
+    /*Radio Toggle*/
+    .toggle &{
+        + .label-text:before{
+            content: "\f204";
+        }
+        &:checked + .label-text:before{
+            content: "\f205";
+        }
+        &:disabled + .label-text:before{
+            content: "\f204";
+        }
+    }
+}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     @include appearance(none);
     margin: 0; 
 }
 input[type=number] {@include appearance(textfield);}
-select {
-    body:not(.ie) &{
-           @include appearance(none);
-    line-height:20px;
-    background-image:url('../img/bg-select.png');
-    background-position: 98% 50%;
-    background-repeat: no-repeat; 
-/*    width:100%; */
-    }
 
-}
 textarea {
     max-height: 120px;
     overflow: auto;
     resize: vertical;
 }
 label{
+    position: relative;
+    cursor: pointer;
+    font-size:larger;
     font-weight:400;
     display:block;
+
     .form-group &.has-icons{
         width:2em;
         span{
@@ -86,4 +142,7 @@ label{
 }
 .input-group{
     margin:1em 0; 
+}
+.form-check{
+    margin:0 0 .5em 0;
 }

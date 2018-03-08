@@ -47,27 +47,19 @@
                 <div class="row"><?php include('includes/small-img-grid.php'); ?></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <form class="d-flex justify-content-between">
-                            <!-- https://bootsnipp.com/snippets/featured/simple-css-custom-checkboxes-and-radios -->
-                            <div>
-                                <h3>1. Customs Checkboxes</h3>
-                                <?php include('includes/form-checkboxes.php'); ?>
-                            </div>
-                            <div>
-                                <h3>2. Customs Radios</h3>
-                                <?php include('includes/form-radios.php'); ?>
-                            </div>
-                            <div>
-                                <h3>3. Customs Toggles</h3>
-                                <?php include('includes/form-toggles.php'); ?>
-                            </div>
-                        </form>
+                        <?php include('includes/large-search-inkl-checkbox.php'); ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <?php include('includes/parallax-events.php'); ?>
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1 text-center">
+            <h2>Passende Artikel</h2>
+            <?php include('includes/items-carousel.php'); ?>
+        </div>
+    </div>
+    <?php include('includes/parallax.php'); ?>
 </main>
 <?php include('includes/footer.php'); ?>
 <?php include('includes/modal-search-dialog.php'); ?>
