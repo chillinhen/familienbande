@@ -1,6 +1,15 @@
 body{
     background:$body-bg;
+
+    &#events, &#names{
+        .sidebar{
+            #btnSuche, #collapseSuche{
+                display:none;
+            }
+        }
+    }
 }
+
 #header{
     position:relative;
     #top-bar{
@@ -53,6 +62,14 @@ main.main-content{
     .hero + &{
         margin-top:10vH;
     }
+    .content{
+        > .row{
+            margin-bottom:5rem;
+        }
+    }
+    .sidebar{
+
+    }
 }
 #footer {
     #home &{
@@ -91,6 +108,7 @@ main.main-content{
 #infoblock{
     &.js-is-sticky,
     &.js-is-stuck{
+        position:sticky !important;
         top:100px !important;
         @include transition(all 400ms ease-out);
     }

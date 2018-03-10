@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
     //$(window).scroll(stickyNav);
     
     // Format attr
-    $(".dropdown-item").filter(function() {
-    return parseInt($(this).attr("tabindex")) > -1;
-}).css('border','1px solid orange');
+//    $(".dropdown-item").filter(function() {
+//    return parseInt($(this).attr("tabindex")) > -1;
+//}).css('border','1px solid orange');
 });

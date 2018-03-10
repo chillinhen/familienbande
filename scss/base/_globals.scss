@@ -48,6 +48,7 @@
             color:#fff;
         }
     }
+    &.btn-primary{background-color: $brand-primary !important;}
     &.btn-secondary{background-color: $brand-secondary !important;}
     &.btn-success{background-color: $brand-success !important;}
     &.btn-danger{background-color: $brand-danger !important;}
@@ -56,6 +57,10 @@
     &.btn-small {
         @include button-style (3px,5px 10px, 0.850em );
     }
+    [class*="cat-"] & {
+        color:white;
+    }
+    [class*="fa"]{font-size:larger;}
     .box &{
         color: $white;
     }
@@ -69,29 +74,26 @@
     .cat-yellow & {
         background: $blue;
         &:hover{
-            background: darken($blue,30%); 
+            background: darken($blue,5%); 
         }
     }
     .cat-yellow & {
         background: $yellow;
         &:hover{
-            background: darken($yellow,30%); 
+            background: darken($yellow,5%); 
         }
     }
     .cat-pink & {
         background: $pink;
         &:hover{
-            background: darken($pink,30%); 
+            background: darken($pink,5%); 
         }
     }
     .cat-green & {
         background: $green;
         &:hover{
-            background: darken($green,30%); 
+            background: darken($green,5%); 
         }
-    }
-    [class*="cat-"] & {
-        color:white;
     }
 }
 a.btn-primary{

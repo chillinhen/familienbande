@@ -8,31 +8,13 @@
 
 @import 'utils/_variables';
 @import 'utils/_mixins';
-/*@import 'utils/_icons';
-@import 'utils/_preloader';
-@import 'base/_ui';
 
-@import 'base/_grid';*/
+
 @import 'base/_typography';
 @import 'base/_globals';
-@import 'base/_layout';
-
-@import 'modules/_navigation';
-@import 'base/_content';
-@import 'base/_media';
 @import 'base/_forms';
-
-/*@import 'base/_maps';
-
-@import 'modules/_carousel';
-@import 'modules/_banner';
-@import 'modules/_panels';
-@import 'modules/_accordions';
-@import 'modules/_events';
-@import 'modules/_infographic';*/
-
-
-/*
-@import 'modules/_widgets';
-@import 'modules/_posts';*/
+@import 'base/_media';
+@import 'base/_layout';
+@import 'base/_content';
+@import 'modules/_navigation';
 @import '_shame';

@@ -17,9 +17,17 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"]{
     margin:0 .5em;
-    @include button-style (2em, 1em, 1em);
+    @include button-style (1.2em, 1em, 1em);
     background:$brand-primary;
     color:$white;
+}
+.btn{
+    &:not(.search){
+       [class*="fa"]{
+        margin:0 .5em 0 0;
+    } 
+    }
+    
 }
 input[type="text"],
 input[type="date"],
@@ -36,11 +44,11 @@ select {
     padding: .5em 1em;
     height:3em;
     font-size:1em;
-    
-    .form-group &{
+    /*ToDo*/
+/*    .form-group &{
         margin:0 1em;
         min-width:300px;
-    }
+    }*/
 /*    @media screen and (max-width:$screen-xs){
         width:100%;
     }
@@ -111,7 +119,7 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {@include appearance(textfield);}
 
 textarea {
-    max-height: 120px;
+    height: auto;
     overflow: auto;
     resize: vertical;
 }
@@ -119,7 +127,7 @@ label{
     position: relative;
     cursor: pointer;
     font-size:larger;
-    font-weight:400;
+    font-weight:bold;
     display:block;
 
     .form-group &.has-icons{
@@ -141,8 +149,23 @@ label{
     }
 }
 .input-group{
-    margin:1em 0; 
+    margin:1em 0;
 }
+.input-group-text{
+        font-size: 1.2em;
+        border: 0;
+        padding:{
+            left:1em;
+            right:1em;
+        }
+        @include category-backgrounds;
+        
+        .justify-content-start & [class*="fa"]{
+            @include align-self(start);
+            margin-top:1em;
+        }
+    }
+
 .form-check{
     margin:0 0 .5em 0;
 }
