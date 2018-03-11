@@ -1,7 +1,7 @@
 <?php include('includes/template/head.php'); ?>
 <body id="knowledge" class="cat-pink">
     <?php include('includes/template/header.php'); ?>
-
+<?php include('includes/navigation/top-nav.php'); ?>
     <main class="main-content">
         <div class="container-fluid">
             <div class="row">

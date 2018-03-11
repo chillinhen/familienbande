@@ -7,9 +7,8 @@
     }
     background: transparent url(../img/logo.png) no-repeat left center;
     background-size:100% auto;
-    min-height:50px;
-    min-width:250px;
-
+/*    min-height:50px;
+    min-width:250px;*/
     @media screen and (min-width:993px){
         min-height:75px;
         min-width:300px;
@@ -26,9 +25,9 @@
     }
 }
 .navbar-toggler{
-    background:$niceGrey;
+    background:transparent;
     > [class*="fa"]{
-        color:white;
+        color:$logoBlue;
         font-size:2em;
     }
 }

@@ -30,7 +30,7 @@
             <div class="ads d-none d-sm-block">
                 <img class="img-fluid" src="img/google-ads.jpg" alt=""/>
             </div>
-            <?php include('includes/modal-overlays/call-modal-box.php'); ?>
+            <?php #include('includes/modal-overlays/call-modal-box.php'); ?>
             <?php include('includes/modules/small-img-grid.php'); ?>
         </div>
     </div>

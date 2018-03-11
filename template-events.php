@@ -1,6 +1,7 @@
 <?php include('includes/template/head.php'); ?>
 <body id="events" class="cat-blue">
     <?php include('includes/template/header.php'); ?>
+    <?php include('includes/navigation/top-nav.php'); ?>
     <div class="hero">
         <div class="container-fluid">
             <div class="row align-items-end">

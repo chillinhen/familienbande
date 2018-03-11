@@ -1,9 +1,7 @@
 <?php include('includes/template/head.php'); ?>
 <body id="knowledge" class="cat-pink">
     <?php include('includes/template/header.php'); ?>
-<!--        <div class="hero">
-           <?php #include('includes/google-map.php'); ?> 
-    </div>-->
+<?php include('includes/navigation/top-nav.php'); ?>
     <main class="main-content">
         <div class="container-fluid">
             <div class="row">

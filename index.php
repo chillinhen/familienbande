@@ -1,6 +1,7 @@
 <?php include('includes/template/head.php'); ?>
 <body id="home">
     <?php include('includes/template/header.php'); ?>
+    <?php include('includes/navigation/top-nav.php'); ?>
     <div class="hero">
         <div class="container-fluid">
             <div class="row align-items-end">
@@ -24,7 +25,7 @@
         <div class="row my-5 py-5">
             <div class="col-sm-10 offset-sm-1 text-center">
                 <h2>Weitere Artikel</h2>
-                <?php include('includes/items-carousel.php'); ?>
+                <?php include('includes/modules/items-carousel.php'); ?>
             </div>
         </div>
     </main>
